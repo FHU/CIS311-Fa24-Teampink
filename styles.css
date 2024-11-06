@@ -14,3 +14,15 @@
     margin: 0;
     padding: 0;
 }
+
+header img {
+    width: 40px;
+    height: auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
