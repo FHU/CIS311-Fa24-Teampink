@@ -4,45 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Pink - BBQ Festival Site</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="main">
-        <img src="images/bbq-festival-logo.svg">
+        <!-- <div><img src="images/bbq-festival-logo.svg"></div> -->
         <nav class="one">
-            <ul>
-                <li>Vendors</li>
-                <li>Sponsors</li>
-            </ul>
-        </nav>
-        <nav class="two">
-            <ul>
-                <li>Schedule</li>
-                <li>Hog Callin'</li>
-                <li>Contact</li>
-                <li>Photos</li>
-            </ul>
-        </nav>
+                <ul>
+                    <li>Vendors</li>
+                    <li>Sponsors</li>
+                </ul>
+            </nav>
+            <nav class="two">
+                <ul>
+                    <li>Schedule</li>
+                    <li>Hog Callin'</li>
+                    <li>Contact</li>
+                    <li>Photos</li>
+                </ul>
+            </nav>
 
     </header>
 
     <body>
-        <img src="images/main.png">
+        <div class="first-image"><img src="images/main.png"></div>
         <h1>Celebrating 46 years of community, family, and togetherness</h1>
-        <img src="images/sponsors/centennial_bank.png" alt="main-sponsor">
+        <img class="main-sponsor" src="images/sponsors/centennial_bank.png">
         <!--3 image grid-->
+        <div class="image-grid">
+            <img src="images/sandwich.png">
+            <img src="images/baby.png">
+            <img src="images/ride.png">
+        </div>
         <!--recap / video-->
         <!--carousel of sponsors-->
+        <div class="carousel">
+            <button class="prev" onclick="changeSlide(-1)">&#10094</button>
+
+            <div class="carousel-images"> 
+                <img src="images/sponsors/aeneas.png" alt="Image 1" class="slide">
+                <img src="images/sponsors/alliance-logo.png" alt="Image 2" class="slide">
+                <img src="images/sponsors/american_fire.png" alt="Image 3" class="slide">
+            </div>
+
+            <button class="next" onclick="changeSlide(1)">&#10095</button>
+        </div>
 
     </body>
 
     <footer>
-        <!--BBQ festival logo-->
-        <img src="images/bbq-festival-logo.svg">
-        <!--Hog Callin' logo-->
-        <img src="images/hog-callin-logo.svg">
-        <!--Info-->
-        <h2>Henderson / Chester County</h2>
+        <div class="top">
+            <!--BBQ festival logo-->
+            <img src="images/bbq-festival-logo.svg">
+            <!--Hog Callin' logo-->
+            <img src="images/hog-callin-logo.svg">
+            <!--Info-->
+            <div class="info">
+                <h2>Henderson / Chester County Chamber of Commerce</h2>
+                <h3>111 East Main Street PO Box 1976 Henderson, TN 38340</h3>
+                <h3>Phone:731-989-5222</h3>
+            </div>
+        </div>
+
+        <p>&copy; <span id="year"></span> Your Website Name. All rights reserved.</p>
     </footer>
 
     <script src="script.js" defer></script>

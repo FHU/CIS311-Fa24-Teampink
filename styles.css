@@ -15,25 +15,116 @@
     padding: 0;
 }
 
-header img {
-    width: 40px;
-    height: auto;
+body {
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
 }
 
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px;
+    width: 100%;
 }
 
-footer {
+header img {
+    width: 40px;
+    height: auto;
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.one {
+    background-color: var(--brown);
+    display: flex;
+    flex-direction: row;
+}
+
+.two {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
+.first-image img {
+    overflow: hidden;
+    width: 100%;
+}
+
+body h1 {
+    text-align: center;
+    padding: 20px 0 20px 0; 
+}
+
+.main-sponsor {
+    width: 15%;
+    height: auto;
+    justify-self: center;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Carousel Design */
+
+.carousel {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    max-width: 600px;
+}
+
+.carousel-images img {
+    width: 20%;
+    height: auto;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* end of carousel Design */
+
+footer {
+    padding-top: 10px;
+    color: white;
+}
+
+footer .top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--brown);
+}
+
 footer img {
     width: 80px;
     height: auto;
+}
+
+footer p {
+    text-align: center;
+    background-color: var(--darker-brown);
+    padding: 10px 0 10px 0; 
 }
