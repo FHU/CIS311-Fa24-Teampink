@@ -27,21 +27,25 @@ body {
 .head {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    /* position: relative; */
+    /* align-items: center; */
+    position: relative;
     width: 100%;
     font-weight:bold;
 }
 
 .logo-container {
-    padding-top: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
     text-align: left;
     width: 100%;
+    z-index: 2;
 }
 
 .logo-container img {
     max-width: 130px;
     margin-left: 20px;
+    padding-top: 8px;
 }
 
 .nav-container {
@@ -53,24 +57,24 @@ body {
 .nav-one {
     background-color: var(--brown);
     color: white;
-    padding: 10px 20px;
-    text-align: right;
+    padding: 10px;
+    font-size: medium;
 }
 
 .nav-one ul, .nav-two ul {
     display: flex;
     list-style: none;
     justify-content: flex-end;
-    gap: 20px;
-    margin: 0;
+    /* gap: 20px;
+    margin: 0; */
 }
 
 .nav-two {
     background-color: white;
     color: var(--orange);
-    padding: 10px;
     font-size: larger;
-    height: 50px;
+    padding: 30px;
+    /* height: 80px; */
 }
 
 .nav-one li, .nav-two li {
@@ -94,7 +98,7 @@ body {
 }
 
 .main-sponsor {
-    width: 18%;
+    width: 20%;
     padding: 35px;
     margin: 0 auto;
     display: block;
