@@ -29,43 +29,67 @@
     </header>
 
     <main>
-        <div class="first-image"><img src="images/main.png"></div>
-        <h1>Celebrating 46 years of community, family, and togetherness</h1>
-        <img class="main-sponsor" src="images/sponsors/centennial_bank.png">
-        <!--3 image grid-->
-        <div class="image-grid">
-            <img src="images/sandwich.png">
-            <img src="images/baby.png">
-            <img src="images/ride.png">
-        </div>
-        <!--recap / video-->
-        <!--carousel of sponsors-->
-        <div class="carousel">
-            <button class="prev" onclick="changeSlide(-1)">&#10094</button>
+        <section class="intro-section">
+            <div class="first-image"><img src="images/main.png"></div>
+            <h1>Celebrating 46 years of community, family, and togetherness</h1>
+            <img class="main-sponsor" src="images/sponsors/centennial_bank.png">
+        </section>
 
-            <div class="carousel-images"> 
-                <img src="images/sponsors/aeneas.png" alt="Image 1" class="slide">
-                <img src="images/sponsors/alliance-logo.png" alt="Image 2" class="slide">
-                <img src="images/sponsors/american_fire.png" alt="Image 3" class="slide">
+        <div class="color-divider"></div>
+
+        <section class="image-grid-section">
+            <!--3 image grid-->
+            <div class="image-grid">
+                <img src="images/sandwich.png">
+                <img src="images/baby.png">
+                <img src="images/ride.png">
             </div>
+        </section>
 
-            <button class="next" onclick="changeSlide(1)">&#10095</button>
-        </div>
+        <div class="color-divider"></div>
+
+        <section class="recap-section">
+            <!--recap / video-->
+            <h1>2024 Recap!</h1>
+            <div class="video">
+                <img src="images/main.png">
+            </div>
+        </section>
+
+        <div class="color-divider"></div>
+
+        <section class="carousel-section">
+            <!--carousel of sponsors-->
+            <div class="carousel">
+                <button class="prev" onclick="changeSlide(-1)">&#10094</button>
+    
+                <div class="carousel-images"> 
+                    <img src="images/sponsors/aeneas.png" alt="Image 1" class="slide">
+                    <img src="images/sponsors/alliance-logo.png" alt="Image 2" class="slide">
+                    <img src="images/sponsors/american_fire.png" alt="Image 3" class="slide">
+                </div>
+    
+                <button class="next" onclick="changeSlide(1)">&#10095</button>
+            </div>
+        </section>
 
     </main>
 
     <footer>
         <div class="top">
-            <!--BBQ festival logo-->
-            <img src="images/bbq-festival-logo.svg">
-            <!--Hog Callin' logo-->
-            <img src="images/hog-callin-logo.svg">
-            <!--Info-->
-            <div class="info">
+            <section class="footer-logos">
+                <!--BBQ festival logo-->
+                <img src="images/bbq-festival-logo.svg">
+                <!--Hog Callin' logo-->
+                <img src="images/hog-callin-logo.svg">
+            </section>
+
+            <section class="footer-info">
+                <!--Info-->
                 <h2>Henderson / Chester County Chamber of Commerce</h2>
                 <h3>111 East Main Street PO Box 1976 Henderson, TN 38340</h3>
                 <h3>Phone:731-989-5222</h3>
-            </div>
+            </section>
         </div>
 
         <p>&copy; <span id="year"></span> Your Website Name. All rights reserved.</p>
