@@ -59,6 +59,7 @@ body {
     color: white;
     padding: 10px;
     font-size: medium;
+    padding-right: 30px;
 }
 
 .nav-one ul, .nav-two ul {
@@ -81,6 +82,17 @@ body {
     margin: 0 15px;
 }
 
+.nav-container li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* hover affect so you know its clickable */
+/* .nav-container li a:hover {
+    background-color: #DD7755;
+    color: white;
+} */
+
 .intro-section .first-image img {
     height: 400px; 
     overflow: hidden;
@@ -95,6 +107,13 @@ body {
     background-color: var(--orange);
     color: white;
     font-size: medium;
+    font-weight:normal;
+}
+
+.highlight {
+    font-weight: bold;
+    font-size: 1.2em;
+    /* font-style: italic; */
 }
 
 .main-sponsor {
@@ -131,13 +150,14 @@ body {
     padding: 20px 0; 
 }
 
-recap-section h1 {
+.recap-section h1 {
     font-size: larger;
     background-color: var(--hog-green);
     border-radius: 15px;
-    padding: 10px;
+    padding: 60px;
     color: white;
     text-align: center;
+    font-size: xx-large;
 }
 
 .recap-section .video img {
