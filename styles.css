@@ -31,6 +31,7 @@ body {
     position: relative;
     width: 100%;
     font-weight:bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .logo-container {
@@ -46,6 +47,8 @@ body {
     max-width: 130px;
     margin-left: 20px;
     padding-top: 8px;
+    /* background-color: white; */
+    /* border-radius: 40px; */
 }
 
 .nav-container {

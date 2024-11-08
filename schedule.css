@@ -14,8 +14,6 @@
     box-sizing: border-box;
 }
 
-
-
 /* Header design stuff */
 .head {
     display: flex;
@@ -88,3 +86,4 @@
     background-color: #DD7755;
     color: white;
 } */
+
