@@ -4,43 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Pink - BBQ Festival Site</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="main">
-        <img src="images/bbq-festival-logo.svg">
-        <nav class="one">
-            <ul>
-                <li>Vendors</li>
-                <li>Sponsors</li>
-            </ul>
-        </nav>
-        <nav class="two">
-            <ul>
-                <li>Schedule</li>
-                <li>Hog Callin'</li>
-                <li>Contact</li>
-                <li>Photos</li>
-            </ul>
-        </nav>
-
+    <header class="head">
+        <div class="logo-container"><img src="images/bbq-festival-logo.svg"></div>
+        <div class="nav-container">
+            <nav class="nav-one">
+                <ul>
+                    <li><a href="#vendors">Vendors</a></li>
+                    <li><a href="#sponsors">Sponsors</a></li>
+                </ul>
+            </nav>
+            <nav class="nav-two">
+                <ul>
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#hog-callin">Hog Callin'</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#photos">Photos</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <body>
-        <img src="images/image.png">
-        <h1>Celebrating 46 years of community, family, and togetherness</h1>
-        <img src="images/sponsors/centennial_bank.png" alt="main-sponsor">
-        <!--image-->
-        <!--main sponsor-->
-        <!--recap / video-->
-        <!--carousel of sponsors-->
+    <main>
+        <section class="intro-section">
+            <div class="first-image"><img src="images/main.png"></div>
+            <h1>Celebrating <span class="highlight">46</span> years of community, family, and togetherness</h1>
+            <img class="main-sponsor" src="images/sponsors/centennial_bank.png">
+        </section>
 
-    </body>
+        <div class="color-divider"></div>
+
+        <section class="image-grid-section">
+            <!--3 image grid-->
+            <div class="image-grid">
+                <img src="images/sandwich.png">
+                <img src="images/baby.png">
+                <img src="images/ride.png">
+            </div>
+        </section>
+
+        <div class="color-divider"></div>
+
+        <section class="recap-section">
+            <!--recap / video-->
+            <h1>2024 Recap!</h1>
+            <div class="video">
+                <img src="images/main.png">
+            </div>
+        </section>
+
+        <div class="color-divider"></div>
+
+        <section class="carousel-section">
+            <!--carousel of sponsors-->
+            <div class="carousel">
+                <button class="prev" onclick="changeSlide(-1)">&#10094</button>
+    
+                <div class="carousel-images"> 
+                    <img src="images/sponsors/aeneas.png" alt="Image 1" class="slide">
+                    <img src="images/sponsors/alliance-logo.png" alt="Image 2" class="slide">
+                    <img src="images/sponsors/american_fire.png" alt="Image 3" class="slide">
+                </div>
+    
+                <button class="next" onclick="changeSlide(1)">&#10095</button>
+            </div>
+        </section>
+
+    </main>
 
     <footer>
-        <!--BBQ festival logo-->
-        <!--Hog Callin' logo-->
-        <!--Info-->
+        <div class="top">
+            <section class="footer-logos">
+                <!--BBQ festival logo-->
+                <img src="images/bbq-festival-logo.svg">
+                <!--Hog Callin' logo-->
+                <img src="images/hog-callin-logo.svg">
+            </section>
+
+            <section class="footer-info">
+                <!--Info-->
+                <h2>Henderson / Chester County Chamber of Commerce</h2>
+                <h3>111 East Main Street PO Box 1976 Henderson, TN 38340</h3>
+                <h3>Phone:731-989-5222</h3>
+            </section>
+        </div>
+
+        <p>&copy; <span id="year"></span> Your Website Name. All rights reserved.</p>
     </footer>
 
     <script src="script.js" defer></script>

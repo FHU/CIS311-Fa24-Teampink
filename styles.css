@@ -13,16 +13,242 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-header img {
-    width: 40px;
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    position: relative;
+    width: 100%;
+    font-weight:bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: left;
+    width: 100%;
+    z-index: 2;
+}
+
+.logo-container img {
+    max-width: 130px;
+    margin-left: 20px;
+    padding-top: 8px;
+    /* background-color: white; */
+    /* border-radius: 40px; */
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.nav-one {
+    background-color: var(--brown);
+    color: white;
+    padding: 10px;
+    font-size: medium;
+    padding-right: 30px;
+}
+
+.nav-one ul, .nav-two ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    /* gap: 20px;
+    margin: 0; */
+}
+
+.nav-two {
+    background-color: white;
+    color: var(--orange);
+    font-size: larger;
+    padding: 30px;
+    /* height: 80px; */
+}
+
+.nav-one li, .nav-two li {
+    margin: 0 15px;
+}
+
+.nav-container li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* hover affect so you know its clickable */
+/* .nav-container li a:hover {
+    background-color: #DD7755;
+    color: white;
+} */
+
+.intro-section .first-image img {
+    height: 400px; 
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    object-fit: cover; /* Ensures the image fills the height without distortion */
+}
+
+.intro-section h1 {
+    text-align: center;
+    padding: 20px 0; 
+    background-color: var(--orange);
+    color: white;
+    font-size: medium;
+    font-weight:normal;
+}
+
+.highlight {
+    font-weight: bold;
+    font-size: 1.2em;
+    /* font-style: italic; */
+}
+
+.main-sponsor {
+    width: 20%;
+    padding: 35px;
+    margin: 0 auto;
+    display: block;
+    justify-self: center;
+}
+
+.color-divider {
+    height: 5px;            /* Thickness of the divider */
+    background-color: var(--orange); /* Color of the divider */
+    width: 100%;            /* Full-width divider */
+    padding: 20px;
+}
+
+.image-grid-section .image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.recap-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0; 
+}
+
+.recap-section h1 {
+    font-size: larger;
+    background-color: var(--hog-green);
+    border-radius: 15px;
+    padding: 60px;
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.recap-section .video img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 15px;
+}
+
+/* Carousel Design */
+
+.carousel {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    max-width: 600px;
+    padding: 15px;
+}
+
+.carousel-images img {
+    width: 20%;
     height: auto;
 }
 
-header {
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* end of carousel Design */
+
+footer {
+    color: white;
+    background-color: var(--brown);
+    padding-top: 10px;
+    width: 100%;
+}
+
+footer .top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+footer .info {
+    font-size: 14px;
+    font-weight: 100;
+    text-align: center;
+}
+
+footer img {
+    width: 80px;
+}
+
+footer p {
+    text-align: center;
+    background-color: var(--darker-brown);
+    padding: 8px 0;
+    margin: 0;
+}
+
+/* footer {
+    padding-top: 10px;
+    color: white;
+}
+
+footer .top{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px;
+    background-color: var(--brown);
 }
+
+footer .info {
+    font-size: 14px;
+    font-weight: 100;
+}
+
+footer img {
+    width: 80px;
+    height: auto;
+}
+
+footer p {
+    text-align: center;
+    background-color: var(--darker-brown);
+    padding: 10px 0 10px 0; 
+} */
