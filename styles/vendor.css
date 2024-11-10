@@ -1,0 +1,24 @@
+
+:root {
+    --brown: #9E7C6B;
+    --green: #2A6543;
+    --grey: #D0D4DC;
+    --orange: #DD7755;
+    --tan: #F7EACA;
+    --hog-green: #015453;
+    --darker-brown: #694D3F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
