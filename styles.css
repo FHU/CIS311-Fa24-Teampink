@@ -38,9 +38,9 @@ body {
 }
 
 .logo-container img {
-    max-width: 130px;
-    padding-top: 14px;
-    padding-left: 10px;
+    max-width: 125px;
+    padding-top: 12px;
+    margin-left: 25px;
     height: auto;
     display: block;
 }
@@ -69,7 +69,7 @@ body {
     background-color: white;
     color: var(--orange);
     font-size: larger;
-    padding: 30px;
+    padding: 35px;
     width: 100%;
 }
 
@@ -168,51 +168,45 @@ body {
 .carousel-section {
     display: flex;
     justify-content: center;
+    margin: 2rem;
 }
 
 .carousel {
-    width: 600px;
-    height: 400px;
+    width: 100%;
+    max-width: 1200px;
     position: relative;
-    overflow: hidden;
-}
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
 
-.carousel-slide {
-    display: none;
-    width: 100%;
-    height: 100%;
-}
+  .carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
 
-.carousel-slide img {
-    width: 100%;
-    height: 100%;
+  .carousel-image {
+    flex: 0 0 33.33%;
+    height: 200px;
     object-fit: cover;
-}
+    padding: 20px;
+  }
 
-.prev, .next {
-    cursor: pointer;
+  .carousel-controls {
     position: absolute;
     top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
     color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-}
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    cursor: pointer;
+  }
 
 /* end of carousel Design */
+
+/* footer Section */
 
 footer {
     color: white;
@@ -251,31 +245,3 @@ footer img {
     justify-content: center;
 
 }
-
-/* footer {
-    padding-top: 10px;
-    color: white;
-}
-
-footer .top{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: var(--brown);
-}
-
-footer .info {
-    font-size: 14px;
-    font-weight: 100;
-}
-
-footer img {
-    width: 80px;
-    height: auto;
-}
-
-footer p {
-    text-align: center;
-    background-color: var(--darker-brown);
-    padding: 10px 0 10px 0; 
-} */

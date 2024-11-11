@@ -1,46 +1,27 @@
-// carousel js
+const carouselContainer = document.querySelector('.carousel-container');
+    const carouselImages = document.querySelectorAll('.carousel-image');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
 
-let slideIndex = 0;
-    showSlides();
+    let currentIndex = 0;
+    const numImages = carouselImages.length;
 
-    function showSlides() {
-      let i;
-      let slides = document.getElementsByClassName("carousel-slide");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {
-        slideIndex = 1;
-      }
-      slides[slideIndex - 1].style.display = "block";
-      setTimeout(showSlides, 5000); // Change image every 5 seconds
+    function updateCarousel() {
+      carouselContainer.style.transform = `translateX(-${currentIndex * (100 / numImages)}%)`;
     }
 
-    function prevSlide() {
-      let i;
-      let slides = document.getElementsByClassName("carousel-slide");
-      if (slideIndex == 1) {
-        slideIndex = slides.length;
-      } else {
-        slideIndex--;
-      }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slides[slideIndex - 1].style.display = "block";
+    function goToPreviousImage() {
+      currentIndex = (currentIndex - 1 + numImages) % numImages;
+      updateCarousel();
     }
 
-    function nextSlide() {
-      let i;
-      let slides = document.getElementsByClassName("carousel-slide");
-      if (slideIndex == slides.length) {
-        slideIndex = 1;
-      } else {
-        slideIndex++;
-      }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slides[slideIndex - 1].style.display = "block";
+    function goToNextImage() {
+      currentIndex = (currentIndex + 1) % numImages;
+      updateCarousel();
     }
+
+    prevBtn.addEventListener('click', goToPreviousImage);
+    nextBtn.addEventListener('click', goToNextImage);
+
+    // Automatically move to the next image every 1 seconds
+    setInterval(goToNextImage, 1000);

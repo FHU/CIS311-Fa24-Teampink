@@ -37,9 +37,9 @@ body {
 }
 
 .logo-container img {
-    max-width: 130px;
-    padding-top: 14px;
-    padding-left: 10px;
+    max-width: 125px;
+    padding-top: 12px;
+    margin-left: 25px;
     height: auto;
     display: block;
 }
@@ -68,7 +68,7 @@ body {
     background-color: white;
     color: var(--orange);
     font-size: larger;
-    padding: 30px;
+    padding: 35px;
     width: 100%;
 }
 
@@ -79,4 +79,44 @@ body {
 .nav-container li a {
     text-decoration: none;
     color: inherit;
+}
+
+/* footer Section */
+
+footer {
+    color: white;
+    background-color: var(--brown);
+    padding-top: 10px;
+    width: 100%;
+}
+
+footer img {
+    width: auto;
+    height: 8rem;
+    padding: 8px 0;
+}
+
+.footer-upper {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.footer-info {
+    font-size: 12px;
+    line-height: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    padding: 8px 0;
+    
+}
+
+.footer-lower {
+    background-color: var(--darker-brown);
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+
 }
