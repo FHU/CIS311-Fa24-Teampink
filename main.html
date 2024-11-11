@@ -62,16 +62,18 @@
         <section class="carousel-section">
             <!--carousel of sponsors-->
             <div class="carousel">
-                <button class="prev" onclick="changeSlide(-1)">&#10094</button>
-    
-                <div class="carousel-images"> 
-                    <img src="images/sponsors/aeneas.png" alt="Image 1" class="slide">
-                    <img src="images/sponsors/alliance-logo.png" alt="Image 2" class="slide">
-                    <img src="images/sponsors/american_fire.png" alt="Image 3" class="slide">
+                <div class="carousel-slide">
+                  <img src="/images/baby.png" alt="Image 1">
                 </div>
-    
-                <button class="next" onclick="changeSlide(1)">&#10095</button>
-            </div>
+                <div class="carousel-slide">
+                  <img src="/images/main.png" alt="Image 2">
+                </div>
+                <div class="carousel-slide">
+                  <img src="/images/ride.png" alt="Image 3">
+                </div>
+                <a class="prev" onclick="prevSlide()">&#10094;</a>
+                <a class="next" onclick="nextSlide()">&#10095;</a>
+              </div>
         </section>
 
     </main>
