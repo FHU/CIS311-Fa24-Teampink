@@ -94,6 +94,7 @@ body {
     overflow: hidden;
     display: block;
     width: 100%;
+    filter: blur(.8px);
     object-fit: cover; /* Ensures the image fills the height without distortion */
 }
 
