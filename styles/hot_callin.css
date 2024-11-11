@@ -25,7 +25,7 @@ body {
 .head {
     display: flex;
     flex-direction: column;
-    position: relative;
+    /* position: relative; */
     width: 100%;
     font-weight: bold;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -42,7 +42,6 @@ body {
     max-width: 125px;
     padding-top: 12px;
     margin-left: 25px;
-    height: auto;
     display: block;
 }
 
@@ -84,47 +83,82 @@ body {
 }
 
 /* Main Section */
-/* .hog-callin-top {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-} */
-
 main {
-    /* padding: 12px; */
-    margin: 30px;
+    margin: 50px;
 }
 
-.whole {
-    display: flex;
-    flex-direction: row;
-    /* padding: 12px; */
+.hog-callin-top {
+    padding: 10px 0;
+    margin-bottom: 30px 0 20px;
 }
 
-.top h1 {
+.hog-callin-top h1 {
     font-size: 40px;
     padding: 20px 0;
+    text-wrap: wrap;
+    /* this needs to be adjust for mobile */
+    width: 20%;
+    color: var(--orange);
+}
+
+.top p {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.float-image {
+    float: right; /* or right */
+    margin: 0 15px 15px 0; /* Add margin to separate the image from the text */
+    width: 150px; /* Optional: set width as needed */
 }
 
 .hog-callin-top img {
-    width: 40%;
+    width: 38%;
+    background-color: var(--brown);
+    margin-left: 30px;
+}
+
+.hog-callin-form {
+    background-color: var(--beige);
+    padding: 50px;
+    margin: 30px 0 80px;
+}
+
+.hog-callin-form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.hog-callin-form input,
+.hog-callin-form select {
+    width: 70%;
+    padding: 8px;
+    margin:5px 0 10px;
+    box-sizing: border-box;
 }
 
 .hog-callin-form, .hog-callin-form .info {
     display: flex;
     flex-direction: column;
-    background-color: var(--grey);
-    /* padding: 10px; */
-    /* margin: 50px; */
 }
 
 .hog-callin-form .info {
-    width: 70%;
+    width: 60%;
+}
+
+.hog-callin-form button {
+    width: 40%;
+    padding: 10px;
+    background-color: var(--orange);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
 }
 
 
 /* Footer Section */
-/* footer Section */
 
 footer {
     color: white;
