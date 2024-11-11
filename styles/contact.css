@@ -80,3 +80,8 @@ body {
     text-decoration: none;
     color: inherit;
 }
+
+.contact-form {
+    background-color: #9E7C6B;
+    display: flex;
+}
