@@ -83,9 +83,26 @@ body {
 }
 
 /* Main Section */
-.hog-callin-top {
+/* .hog-callin-top {
     display: flex;
+    flex-direction: column;
     padding: 10px;
+} */
+
+main {
+    /* padding: 12px; */
+    margin: 30px;
+}
+
+.whole {
+    display: flex;
+    flex-direction: row;
+    /* padding: 12px; */
+}
+
+.top h1 {
+    font-size: 40px;
+    padding: 20px 0;
 }
 
 .hog-callin-top img {
@@ -95,10 +112,9 @@ body {
 .hog-callin-form, .hog-callin-form .info {
     display: flex;
     flex-direction: column;
-    align-items: center;
     background-color: var(--grey);
-    padding: 10px;
-    margin: 50px;
+    /* padding: 10px; */
+    /* margin: 50px; */
 }
 
 .hog-callin-form .info {
@@ -107,3 +123,42 @@ body {
 
 
 /* Footer Section */
+/* footer Section */
+
+footer {
+    color: white;
+    background-color: var(--brown);
+    padding-top: 10px;
+    width: 100%;
+}
+
+footer img {
+    width: auto;
+    height: 8rem;
+    padding: 8px 0;
+}
+
+.footer-upper {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.footer-info {
+    font-size: 12px;
+    line-height: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    padding: 8px 0;
+    
+}
+
+.footer-lower {
+    background-color: var(--darker-brown);
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+
+}
