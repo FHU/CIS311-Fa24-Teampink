@@ -1,0 +1,87 @@
+/* Color Palette */
+
+:root {
+    --brown: #9E7C6B;
+    --green: #2A6543;
+    --grey: #D0D4DC;
+    --orange: #DD7755;
+    --tan: #F7EACA;
+    --hog-green: #015453;
+    --darker-brown: #694D3F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+}
+
+.logo-container img {
+    max-width: 130px;
+    padding-top: 14px;
+    padding-left: 10px;
+    height: auto;
+    display: block;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.nav-one {
+    background-color: var(--brown);
+    color: white;
+    padding: 10px 30px;
+    font-size: medium;
+    width: 100%;
+}
+
+.nav-one ul, .nav-two ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.nav-two {
+    background-color: white;
+    color: var(--orange);
+    font-size: larger;
+    padding: 30px;
+    width: 100%;
+}
+
+.nav-one li, .nav-two li {
+    margin: 0 15px;
+}
+
+.nav-container li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact-form {
+    background-color: #9E7C6B;
+    display: flex;
+}
