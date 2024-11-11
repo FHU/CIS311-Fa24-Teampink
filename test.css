@@ -78,3 +78,70 @@ body {
     text-decoration: none;
     color: inherit;
 }
+
+/* hover affect so you know its clickable */
+/* .nav-container li a:hover {
+    background-color: #DD7755;
+    color: white;
+} */
+h1{
+    text-align: center;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 250px); /* 2 columns with each folder 150px wide */
+    grid-gap: 20px; /* Space between the folders */
+    justify-content: center; /* Center the grid */
+    margin-top: 20px;
+    max-width: 100%;
+    justify-content: center;
+ }
+ 
+ .folder {
+    width: 250px;
+    height: 300px; /* Increased height to accommodate both image and year */
+    background-color: #015453; 
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Stack the image and year vertically */
+    align-items: center;
+    justify-content: flex-start; /* Align at the top */
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    overflow: hidden; /* Ensures image doesn't overflow outside the folder */
+}
+
+ .folder img {
+    width: 100%; /* Fit image to the folder width */
+    height: 220px; /* Set height to ensure a consistent size */
+    object-fit: cover; /* Crop image to fill */
+    
+ }
+
+ .year {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+ }
+
+ .submit-button {
+    background-color: #BC4F32; 
+    color: white; 
+    padding: 15px 30px; 
+    font-size: 18px; 
+    font-weight: bold; 
+    text-align: center; 
+    border-radius: 0px; 
+    width: 300px; 
+    margin: 30px auto; 
+    cursor: pointer; 
+}
+
+.submit-button:hover {
+    background-color: rgb(189, 104, 0); /* Darken the background on hover */
+}
+ 
