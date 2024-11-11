@@ -214,6 +214,8 @@ body {
 
 /* end of carousel Design */
 
+/* footer Section */
+
 footer {
     color: white;
     background-color: var(--brown);
@@ -251,31 +253,3 @@ footer img {
     justify-content: center;
 
 }
-
-/* footer {
-    padding-top: 10px;
-    color: white;
-}
-
-footer .top{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: var(--brown);
-}
-
-footer .info {
-    font-size: 14px;
-    font-weight: 100;
-}
-
-footer img {
-    width: 80px;
-    height: auto;
-}
-
-footer p {
-    text-align: center;
-    background-color: var(--darker-brown);
-    padding: 10px 0 10px 0; 
-} */
