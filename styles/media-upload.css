@@ -83,6 +83,7 @@ body {
 
 h1{
     text-align: center;
+    margin-top: 20px;
 }
 
 .image-gallery {
@@ -140,4 +141,42 @@ h1{
 
 .submit-button:hover {
     background-color: rgb(189, 104, 0); /* Darken the background on hover */
+}
+
+footer {
+    color: white;
+    background-color: var(--brown);
+    padding-top: 10px;
+    width: 100%;
+}
+
+footer img {
+    width: auto;
+    height: 8rem;
+    padding: 8px 0;
+}
+
+.footer-upper {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.footer-info {
+    font-size: 12px;
+    line-height: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    padding: 8px 0;
+    
+}
+
+.footer-lower {
+    background-color: var(--darker-brown);
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+
 }
