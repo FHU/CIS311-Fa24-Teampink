@@ -25,3 +25,13 @@ const carouselContainer = document.querySelector('.carousel-container');
 
     // Automatically move to the next image every 1 seconds
     setInterval(goToNextImage, 1000);
+
+
+    // sponsor drop down
+    const infoListItems = document.querySelectorAll('.info-list-item');
+
+    infoListItems.forEach(item => {
+      item.querySelector('h3').addEventListener('click', () => {
+        item.classList.toggle('expanded');
+      });
+    });
