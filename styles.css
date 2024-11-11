@@ -140,27 +140,40 @@ body {
 }
 
 .recap-section {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    padding: 40px 20px;
     align-items: center;
-    gap: 20px;
-    padding: 20px 0; 
 }
 
 .recap-section h1 {
-    font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
     background-color: var(--hog-green);
-    border-radius: 15px;
-    padding: 60px;
+    border-radius: 10px;
     color: white;
     text-align: center;
-    font-size: xx-large;
+    font-size: 75px;
+    text-wrap: wrap;
+    width: 85%;
+    padding: 64px 60px;
+    /* height: 100%; */
 }
 
-.recap-section .video img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 15px;
+.recap-section .video{
+    overflow: hidden;
+    border-radius: 10px;
+    /* height: 100%; */
+    width: 85%;
+    margin: 0 auto;
+}
+
+.recap-section .video iframe {
+    border-radius: 10px;
+    justify-items: center;
 }
 
 /* Carousel Design */
