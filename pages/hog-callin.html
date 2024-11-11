@@ -29,13 +29,53 @@
 
     <main>
         <section class="hog-callin-top">
-
+            <h1>Hog Callin' Registration</h1>
+            <p>SOOO-o-oeeyyy!! The Henderson/Chester County Chamber of Commerce will once again host a crowd favorite competition at 
+                the upcoming 45th annual BBQ Festival. However this year, the popular Hog Callin’ Contest is stepping up to host the 
+                inaugural Tennessee State Hog Callin’ Championship. As has become tradition, the event is scheduled for the opening day
+                of the Chester County BBQ Festival, and organizers hope to make it the biggest one yet. Contestants will be judged on
+                originality, presentation, creativity and are invited from across the state to show their skills. Thanks to corporate
+                sponsors, TN Pork Producers and Tosh Farms, this year’s competitors are facing off for impressive prizes: a trophy
+                plus $1,000 for the first place winner and $500 for the second place winner. In addition, the winner will be named
+                the 2023 Tennessee Hog Callin’ Champion.
+            </p>
+            <img src="/images/hog-callin-logo.svg">
         </section>
 
         <section class="hog-callin-form">
             <h1>Hog Callin' Form</h1>
             <form>
+                <!-- Choose Hog Calling Registration Payment Method -->
+                <label for="direction">Sponsor Registration Payment Method*</label>
+                <select name="payment">
+                    <option value="">--Please choose an option--</option>
+                    <option value="check">Mail in Check</option>
+                    <option value="card">Credit Card via PayPal</option>
+                </select>
 
+                <h1>Contact Information</h1>
+
+                <!--Registrant Name*-->
+                <label for="name">Registration Name*</label>
+                <input type="text" id="name" name="name" required>
+
+                <!--Contact Phone Number*-->
+                <label for="phone">Contact Phone Number*</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <!--Mailing Address*-->
+                <label for="mailing-add">Mailing Address*</label>
+                <input type="text" id="address" name="address" required>
+
+                <!--Email Address*-->
+                <label for="email">Email Address*</label>
+                <input type="email" id="email" name="email" required>
+
+                <!--Amount Due*-->
+                <label for="money">Amount Due*</label>
+                <input type="number" id="money">
+
+                <button>Submit and Pay</button>
             </form>
         </section>
 

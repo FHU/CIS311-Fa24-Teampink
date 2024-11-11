@@ -20,6 +20,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* header section */
 .head {
     display: flex;
     flex-direction: column;
@@ -85,6 +86,8 @@ body {
     background-color: #DD7755;
     color: white;
 } */
+
+/* Main Section */
 
 .intro-section .first-image img {
     height: 400px; 

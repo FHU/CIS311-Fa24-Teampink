@@ -27,5 +27,102 @@
             </nav>
         </div>
     </header>
+
+    <main>
+        <section class="vendor-top">
+            <h1>Vendor Registration</h1>
+            <p>The Chester County BBQ Festival continues to be an annual tradition since 1978. The festival is held
+                each year on the last Friday and Saturday of September. It features BBQ, live entertainment, fried
+                treats, children’s activities, and vendors. The festival is the Henderson/Chester County Chamber of
+                Commerce’s largest fundraising event and is made possible by a volunteer committee. There is no
+                admission fee. All events center around the Chester County Courthouse lawn in downtown Henderson.
+            </p>
+            <!--Image-->
+        </section>
+
+        <section class="vendor-form">
+            <h1>Vendor Registration Payment Method</h1>
+            <form>
+                <!-- Choose Hog Calling Registration Payment Method -->
+                <label for="direction">Sponsor Registration Payment Method*</label>
+                <select name="payment">
+                    <option value="">--Please choose an option--</option>
+                    <option value="check">Mail in Check</option>
+                    <option value="card">Credit Card via PayPal</option>
+                </select>
+
+                <h2>Contact Information</h2>
+                
+                <!--Booth Name*-->
+                <label>Booth Name*</label>
+                <input type="text" required>
+
+                <!--Booth Contact Name*-->
+                <label>Booth Contact Name*</label>
+                <input type="text" required>
+
+                <!--Contact Phone Number*-->
+                <label for="phone">Contact Phone Number*</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <!--Mailing Address*-->
+                <label for="mailing-add">Mailing Address*</label>
+                <input type="text" id="address" name="address" required>
+
+                <!--Email Address-->
+                <label for="email">Email Address*</label>
+                <input type="email" id="email" name="email" required>
+
+                <!--Vendor type-->
+                <label>Vendor Type*</label>
+                <select name="vendor-type">
+                    <option value="">--Please choose an option--</option>
+                    <option value="no-food">Non Food</option>
+                    <option value="food">Food</option>
+                </select>
+
+                <!--Vendor Spaces-->
+                <label>Vendor Spcaes*</label>
+                <select name="vendor-space">
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                </select>
+
+                <div class="insurance">
+                    <p>Insurance Certificate Upload</p>
+                    <button>Choose File</button>
+                    <!--Have something about the status..If a file has been chosen-->
+                </div>
+
+                <!--Amount Due*-->
+                <label>Amount Due*</label>
+                <input type="text">
+                <p>If there is no amount due, make sure you have chosen a "SPONSOR LEVEL" Checks can be mailed to PO Box
+                    1976, Henderson, TN 38340
+                </p>
+
+                <label>
+                    <input type="checkbox" name="agreement">
+                    I have read and agree to the sponsorship level I will pay for.
+                </label>
+
+                <!--Electronic Signature-->
+                <label>Electronic Signature*</label>
+                <input type="text" id="Signature">
+
+                <!--Date-->
+                <label>Date</label>
+                <input type="date" id="date">
+
+                <!--Button-->
+                <button>Submit and Pay</button>
+
+            </form>
+
+        </section>
+    </main>
+
+    <footer></footer>
 </body>
 </html>
