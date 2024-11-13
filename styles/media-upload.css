@@ -99,23 +99,25 @@ h1{
  
 .folder {
     width: 250px;
-    height: 300px; /* Increased height to accommodate both image and year */
+    height: 260px; /* Increased height to accommodate both image and year */
     background-color: #015453; 
     text-align: center;
     display: flex;
+    padding: 10px;
     flex-direction: column; /* Stack the image and year vertically */
     align-items: center;
-    justify-content: flex-start; /* Align at the top */
     font-weight: bold;
-    font-family: Arial, sans-serif;
+    justify-content: space-between;
     border-radius: 10px;
     overflow: hidden; /* Ensures image doesn't overflow outside the folder */
 }
 
  .folder img {
-    width: 100%; /* Fit image to the folder width */
+    width: 90%; /* Fit image to the folder width */
     height: 220px; /* Set height to ensure a consistent size */
     object-fit: cover; /* Crop image to fill */
+    padding-top: 10px;
+    border-radius: 10px;
     
  }
 
@@ -171,12 +173,10 @@ footer img {
 .footer-info {
     font-size: 12px;
     line-height: 1.5rem;
-
     display: flex;
     flex-direction: column;
     width: 15rem;
     padding: 8px 0;
-    
 }
 
 .footer-lower {
@@ -184,5 +184,4 @@ footer img {
     padding: 0.5rem;
     display: flex;
     justify-content: center;
-
 }
