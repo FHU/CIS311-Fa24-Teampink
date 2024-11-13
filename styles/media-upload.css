@@ -187,8 +187,35 @@ footer img {
 }
 
 @media screen and (max-width: 768px) {
-    .image-gallery {
-        grid-template-columns: repeat(1, 250px); /* 1 column with each folder 150px wide */
+    .nav-one, .nav-two {
+        flex-direction: column;
+        text-align: center;
     }
+
+    .image-gallery {
+        grid-template-columns: 1fr; /* Single column layout */
+        padding: 0 10px;
+        margin-left: 70px;
+    }
+
+    .folder {
+        width: 90%;
+        height: auto; /* Adjusts height for smaller screens */
+        padding: 8px;
+    }
+
+    .submit-button {
+        width: 90%;
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .footer-upper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+
     
 }
