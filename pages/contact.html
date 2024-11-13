@@ -33,13 +33,15 @@
             <h1>Contact Us!</h1>
             <div class="body">
                 <div class="text">
-                    <h3>Mailing Address</h3>
-                    <p>Henderson / Chester County Chamber of Commerce
-                        111 East Main Street, PO Box 1976,
-                        Henderson, TN 38340
-                    </p>
-                    <h3>Office Phone</h3>
-                    <p>731-989-5222</p>
+                    <div>
+                        <h3>Mailing Address</h3>
+                        <p>Henderson / Chester County Chamber of Commerce</p>
+                        <p>111 East Main Street, PO Box 1976,Henderson, TN 38340</p>
+                    </div>
+                    <div>
+                        <h3>Office Phone</h3>
+                        <p class="number">731-989-5222</p>
+                    </div>
                 </div>
                 <img src="/images/ride.png">
             </div>
@@ -47,14 +49,14 @@
 
         <section class="contact-form">
             <h1>Reach Out!</h1>
-            <form action="contact">
+            <form class="info">
 
                 <!--Registration Name-->
-                <label for="name">Registration Name*</label>
+                <label for="name">Name*</label>
                 <input type="text" id="name" name="name" required>
 
                 <!--Registrant Phone Number-->
-                <label for="phone">Registrant Phone Number*</label>
+                <label for="phone">Phone Number*</label>
                 <input type="tel" id="phone" name="phone" required>
 
                 <!--Mailing Address-->
@@ -65,11 +67,11 @@
                 <label for="email">Email Address*</label>
                 <input type="email" id="email" name="email" required>
 
-                <!--Amount Due-->
-                <label for="money">Amount Due*</label>
-                <input type="number" id="money">
+                <!--Where you Can put your question-->
+                <label for="info">Context*</label>
+                <input type="text" id="info" required>
 
-                <button>Submit and Pay</button>
+                <button>Submit</button>
             </form>
         </section>
     </main>

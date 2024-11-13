@@ -90,7 +90,7 @@ main {
 
 .contact-top {
     padding: 10px 0;
-    margin-bottom: 30px 0 20px;
+    margin: 30px 0 20px;
 }
 
 .contact-top h1 {
@@ -100,16 +100,36 @@ main {
 
 .contact-top .body {
     display: flex;
+    padding-top: 10px;
+    line-height: 1.8;
+    justify-content: space-between;
 }
 
 .contact-top img {
     width: 38%;
     /* background-color: var(--brown); */
-    margin-left: 30px;
+    border-radius: 10px;
+    box-shadow: 40px 40px 0 var(--orange);
+    margin-right: 40px;
+    margin-bottom: 50px;
 }
 
-.contact-top .text {
+.text {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 40%;
+    font-weight: 100;
     font-size: 25px;
+    text-wrap: wrap;
+}
+
+.text h3 {
+    color: var(--orange);
+}
+
+.number {
+    text-decoration: underline;
 }
 
 .contact-form {
@@ -129,6 +149,10 @@ main {
     padding: 8px;
     margin:5px 0 10px;
     box-sizing: border-box;
+}
+
+.contact-form .info {
+    width: 60%;
 }
 
 .contact-form button {
