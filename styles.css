@@ -172,8 +172,25 @@ body {
 } */
 
 .recap-section {
-    text-align: center;
-    margin: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    /* padding: 40px 20px; */
+    align-items: center;
+    margin: 20px;
+}
+
+.recap-section .description{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 40px;
+    font-size: 18.5px;
+}
+
+.time h3 {
+    text-decoration: underline;
 }
 
 .recap-section .video iframe {
