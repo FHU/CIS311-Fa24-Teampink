@@ -154,6 +154,28 @@ main {
     cursor: pointer;
     margin-top: 15px;
 }
+
+.amount {
+    width: 72%;
+    text-wrap: wrap;
+}
+
+.check {
+    margin: 0;
+    padding: 0;
+}
+
+.insurance {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+}
+
+.insurance p {
+    padding-top: 12px;
+}
 /* footer Section */
 
 footer {
