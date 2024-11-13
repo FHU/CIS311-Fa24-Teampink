@@ -1,3 +1,5 @@
+/* Color Palette */
+
 :root {
     --brown: #9E7C6B;
     --green: #2A6543;
@@ -18,6 +20,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* header section */
 .head {
     display: flex;
     flex-direction: column;
@@ -35,9 +38,9 @@ body {
 }
 
 .logo-container img {
-    max-width: 130px;
-    padding-top: 8px;
-    padding-left: 10px;
+    max-width: 125px;
+    padding-top: 12px;
+    margin-left: 25px;
     height: auto;
     display: block;
 }
@@ -66,7 +69,7 @@ body {
     background-color: white;
     color: var(--orange);
     font-size: larger;
-    padding: 30px;
+    padding: 35px;
     width: 100%;
 }
 
@@ -79,65 +82,42 @@ body {
     color: inherit;
 }
 
+/* footer Section */
 
-h1{
-    text-align: center;
+footer {
+    color: white;
+    background-color: var(--brown);
+    padding-top: 10px;
+    width: 100%;
 }
 
-.image-gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 250px); 
-    grid-gap: 20px; 
-    justify-content: center; 
-    margin-top: 20px;
-    max-width: 100%;
-    justify-content: center;
- }
- 
- .folder {
-    width: 250px;
-    height: 300px; 
-    background-color: #015453; 
-    text-align: center;
+footer img {
+    width: auto;
+    height: 8rem;
+    padding: 8px 0;
+}
+
+.footer-upper {
     display: flex;
-    flex-direction: column; 
-    align-items: center;
-    justify-content: flex-start; 
-    font-weight: bold;
-    font-family: Arial, sans-serif;
-    border-radius: 10px;
-    overflow: hidden; 
+    justify-content: space-around;
 }
 
- .folder img {
-    width: 100%; 
-    height: 220px; 
-    object-fit: cover; 
+
+.footer-info {
+    font-size: 12px;
+    line-height: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    padding: 8px 0;
     
- }
-
- .year {
-    margin-top: 10px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #ffffff;
-    text-align: center;
- }
-
- .submit-button {
-    background-color: #BC4F32; 
-    color: white; 
-    padding: 15px 30px; 
-    font-size: 18px; 
-    font-weight: bold; 
-    text-align: center; 
-    border-radius: 0px; 
-    width: 300px; 
-    margin: 30px auto; 
-    cursor: pointer; 
 }
 
-.submit-button:hover {
-    background-color: rgb(189, 104, 0); 
+.footer-lower {
+    background-color: var(--darker-brown);
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+
 }
- 

@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Page</title>
-    <link rel="stylesheet" href="/styles/contact.css">
+    <link rel="stylesheet" href="../styles/contact.css">
 </head>
 <body>
     <header class="head">
-        <div class="logo-container"><a href="/main.html"><img src="/images/bbq-festival-logo.svg"></a></div>
+        <div class="logo-container"><a href="/index.html"><img src="../images/bbqlogo.png"></a></div>
         <div class="nav-container">
             <nav class="nav-one">
                 <ul>
@@ -31,26 +31,32 @@
     <main>
         <section class="contact-top">
             <h1>Contact Us!</h1>
-            <h3>Mailing Address</h3>
-            <p>Henderson / Chester County Chamber of Commerce
-                111 East Main Street, PO Box 1976,
-                Henderson, TN 38340
-            </p>
-            <h3>Office Phone</h3>
-            <p>731-989-5222</p>
-            <img src="/images/ride.png">
+            <div class="body">
+                <div class="text">
+                    <div>
+                        <h3>Mailing Address</h3>
+                        <p>Henderson / Chester County Chamber of Commerce</p>
+                        <p>111 East Main Street, PO Box 1976, Henderson,TN 38340</p>
+                    </div>
+                    <div>
+                        <h3>Office Phone</h3>
+                        <p class="number">731-989-5222</p>
+                    </div>
+                </div>
+                <img src="../images/ride.png">
+            </div>
         </section>
 
         <section class="contact-form">
             <h1>Reach Out!</h1>
-            <form action="contact">
+            <form class="info">
 
                 <!--Registration Name-->
-                <label for="name">Registration Name*</label>
+                <label for="name">Name*</label>
                 <input type="text" id="name" name="name" required>
 
                 <!--Registrant Phone Number-->
-                <label for="phone">Registrant Phone Number*</label>
+                <label for="phone">Phone Number*</label>
                 <input type="tel" id="phone" name="phone" required>
 
                 <!--Mailing Address-->
@@ -61,11 +67,11 @@
                 <label for="email">Email Address*</label>
                 <input type="email" id="email" name="email" required>
 
-                <!--Amount Due-->
-                <label for="money">Amount Due*</label>
-                <input type="number" id="money">
+                <!--Where you Can put your question-->
+                <label for="info">Context*</label>
+                <input type="text" id="info" required>
 
-                <button>Submit and Pay</button>
+                <button>Submit</button>
             </form>
         </section>
     </main>
@@ -75,9 +81,9 @@
         <div class="footer-upper">
             
             <!--BBQ festival logo-->
-            <img src="/images/bbq-festival-logo.svg">
+            <img src="../images/bbq-festival-logo.svg">
             <!--Hog Callin' logo-->
-            <img src="/images/hog-callin-logo.svg">
+            <img src="../images/hog-callin-logo.svg">
 
             <div class="footer-info">
                 <!--Info-->

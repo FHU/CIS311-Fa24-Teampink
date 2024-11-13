@@ -8,6 +8,7 @@
     --tan: #F7EACA;
     --hog-green: #015453;
     --darker-brown: #694D3F;
+    --beige: #92755c4c;
 }
 
 * {
@@ -81,6 +82,78 @@ body {
     color: inherit;
 }
 
+/* Main Section */
+main {
+    margin: 50px;
+}
+
+.vendor-top {
+    padding: 10px 0;
+    margin-bottom: 30px 0 20px;
+}
+
+.vendor-top .info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vendor-top .info p {
+    font-size: 24px;
+    width: 50%;
+    line-height: 1.5;
+}
+
+.vendor-top h1 {
+    font-size: 40px;
+    padding: 20px 0;
+    text-wrap: wrap;
+    /* this needs to be adjust for mobile */
+    width: 30%;
+    color: var(--orange);
+}
+
+.vendor-top img {
+    width: 38%;
+    /* background-color: var(--brown); */
+    border-radius: 10px;
+    box-shadow: 40px 40px 0 var(--orange);
+    margin-right: 40px;
+    margin-bottom: 50px;
+}
+
+.vendor-form {
+    background-color: var(--beige);
+    padding: 50px;
+    margin: 30px 0 80px;
+}
+
+.vendor-form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.vendor-form input,
+.vendor-form select {
+    width: 70%;
+    padding: 8px;
+    margin:5px 0 10px;
+    box-sizing: border-box;
+}
+
+.vendor-form .info {
+    width: 60%;
+}
+
+.vendor-form button {
+    width: 40%;
+    padding: 10px;
+    background-color: var(--orange);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
 /* footer Section */
 
 footer {

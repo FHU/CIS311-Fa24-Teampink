@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sponsor Page</title>
-    <link rel="stylesheet" href="/styles/sponsor.css">
+    <link rel="stylesheet" href="../styles/sponsor.css">
 </head>
 <body>
     <header class="head">
-        <div class="logo-container"><a href="/main.html"><img src="/images/bbqlogo.png"></a></div>
+        <div class="logo-container"><a href="/index.html"><img src="../images/bbqlogo.png"></a></div>
         <div class="nav-container">
             <nav class="nav-one">
                 <ul>
@@ -22,7 +22,7 @@
                     <li><a href="/pages/hog-callin.html">Hog Callin'</a></li>
                     <!-- still need to add a link -->
                     <li><a href="/pages/contact.html">Contact</a></li>
-                    <li><a href="#photos">Photos</a></li>
+                    <li><a href="/pages/media_upload.html">Photos</a></li>
                 </ul>
             </nav>
         </div>
@@ -32,97 +32,130 @@
         <section class="sponsor-top">
             <h1>Sponsor Registration</h1>
             <p>By becoming a festival sponsor, your business can support our community and chamber while taking advantage of a great marketing opportunity!</p>
-            <img src="/images/ride.png">
+            <img src="../images/ride.png">
         </section>
 
-        <section class="sponsor-form">
-            <h2>Sponsor Form</h2>
-            <p>*All Sponsor forms must be filled out by Friday, August 27th</p>
+        <div class="sponsor-main">
+            <div class="sponsor-form">
+                <h1>Sponsor Form</h1>
+                <p>*All Sponsor forms must be filled out by Friday, August 27th</p>
 
-            <form action="become-sponsor">
+                <form action="become-sponsor">
 
-                <!-- Choose Sponsor Registration Payment Method -->
-                <label for="direction">Sponsor Registration Payment Method*</label>
-                <select name="payment">
-                    <option value="">--Please choose an option--</option>
-                    <option value="check">Mail in Check</option>
-                    <option value="card">Credit Card via PayPal</option>
-                </select>
+                    <!-- Choose Sponsor Registration Payment Method -->
+                    <label for="direction">Sponsor Registration Payment Method*</label>
+                    <select name="payment">
+                        <option value="">--Please choose an option--</option>
+                        <option value="check">Mail in Check</option>
+                        <option value="card">Credit Card via PayPal</option>
+                    </select>
 
-                <h2>Contact Information</h2>
-                <label for="name">Name*</label>
-                <input type="text" id="name" name="name" required>
+                    <h2>Contact Information</h2>
+                    <label for="name">Name*</label>
+                    <input type="text" id="name" name="name" required>
 
-                <!--Sponsor Level-->
-                <label for="sponsor-lvl">Sponsor Level*</label>
-                <select name="level">
-                    <option value="">--Please choose an option--</option>
-                    <option value="grand">Grand Champion $1000</option>
-                    <option value="blue">Blue Ribbon $750</option>
-                    <option value="whole">Whole Hog $500</option>
-                    <option value="pit">Pit Crew $300</option>
-                    <option value="public">Public Eating Tent $1000</option>
-                    <option value="swine">Swine and Shine Car Show $500</option>
-                    <option value="antique">Antique Tractor Show $500</option>
-                    <option value="gameday">Gameday Tailgate Zone $500</option>
-                    <option value="hog">Hog Wild Cornhold Tournament $500</option>
-                    <option value="oink">Oink' N' Doink' Dunkin' Booth $500</option>
-                    <option value="responders">First Responders Appreciation + Touch-A-Truck $500</option>
-                    <option value="little">Little Pig Town: Childrens' Ride Area $300</option>
-                    <option value="piglet">Piglet Pen: Toddlers' Area $300</option>
-                    <option value="porky">Porky's Pedal Tractor Pull $300</option>
-                    <option value="princess">Princess Tea + Super Hero Hangout $300</option>
-                </select>
+                    <!--Sponsor Level-->
+                    <label for="sponsor-lvl">Sponsor Level*</label>
+                    <select name="level">
+                        <option value="">--Please choose an option--</option>
+                        <option value="grand">Grand Champion $1000</option>
+                        <option value="blue">Blue Ribbon $750</option>
+                        <option value="whole">Whole Hog $500</option>
+                        <option value="pit">Pit Crew $300</option>
+                        <option value="public">Public Eating Tent $1000</option>
+                        <option value="swine">Swine and Shine Car Show $500</option>
+                        <option value="antique">Antique Tractor Show $500</option>
+                        <option value="gameday">Gameday Tailgate Zone $500</option>
+                        <option value="hog">Hog Wild Cornhold Tournament $500</option>
+                        <option value="oink">Oink' N' Doink' Dunkin' Booth $500</option>
+                        <option value="responders">First Responders Appreciation + Touch-A-Truck $500</option>
+                        <option value="little">Little Pig Town: Childrens' Ride Area $300</option>
+                        <option value="piglet">Piglet Pen: Toddlers' Area $300</option>
+                        <option value="porky">Porky's Pedal Tractor Pull $300</option>
+                        <option value="princess">Princess Tea + Super Hero Hangout $300</option>
+                    </select>
 
-                <!--Phone Number-->
-                <label for="phone">Phone Number*</label>
-                <input type="tel" id="phone" name="phone" required>
+                    <!--Phone Number-->
+                    <label for="phone">Phone Number*</label>
+                    <input type="tel" id="phone" name="phone" required>
 
-                <!--Mailing Address-->
-                <label for="mailing-add">Mailing Address*</label>
-                <input type="text" id="address" name="address" required>
+                    <!--Mailing Address-->
+                    <label for="mailing-add">Mailing Address*</label>
+                    <input type="text" id="address" name="address" required>
 
-                <!--Email Address-->
-                <label for="email">Email Address*</label>
-                <input type="email" id="email" name="email" required>
+                    <!--Email Address-->
+                    <label for="email">Email Address*</label>
+                    <input type="email" id="email" name="email" required>
 
-                <div class="sponsor-logo">
-                    <h3>Sponsor Logo</h3>
-                    <div class="buttons">
-                        <!--Button - Choose File-->
-                        <button>Choose File</button>
-                        <!--Button - No File chosen-->
-                        <button>No file chosen</button>
+                    <div class="sponsor-logo">
+                        <h3>Sponsor Logo</h3>
+                        <div class="buttons">
+                            <!--Button - Choose File-->
+                            <button>Choose File</button>
+                            <!--Button - No File chosen-->
+                            <button>No file chosen</button>
+                        </div>
+                        <p>Only needed if they choose a sponsor package with their company logo option</p>
                     </div>
-                    <p>Only needed if they choose a sponsor package with their company logo option</p>
+
+                    <!--Ammount Due-->
+                    <label>Amount Due*</label>
+                    <input type="text">
+                    <p>If there is no amount due, make sure you have chosen a "SPONSOR LEVEL" Checks can be mailed to PO Box
+                        1976, Henderson, TN 38340
+                    </p>
+
+                    <!--Check box-->
+                    <label>
+                        <input type="checkbox" name="agreement">
+                        I have read and agree to the sponsorship level I will pay for.
+                    </label>
+
+                    <!--Electronic Signature-->
+                    <label>Electronic Signature*</label>
+                    <input type="text" id="Signature">
+
+                    <!--Date-->
+                    <label>Date</label>
+                    <input type="date" id="date">
+
+                    <!--Button-->
+                    <button>Submit and Pay</button>
+                </form>
+
+            </div>
+            
+            <div class="sponsor-info">
+
+                <div class="sponsor-option">
+                    <ul class="info-list">
+                        <li class="info-list-item">
+                        <h3>Company Overview</h3>
+                        <div class="details">
+                            <p>We are a leading provider of innovative solutions in the industry. Our team of experts is dedicated to delivering high-quality products and exceptional customer service.</p>
+                        </div>
+                        </li>
+                        <li class="info-list-item">
+                        <h3>Our History</h3>
+                        <div class="details">
+                            <p>Founded in 2010, our company has quickly grown to become a trusted name in the market. We have a long-standing commitment to excellence and a track record of successful projects.</p>
+                        </div>
+                        </li>
+                        <li class="info-list-item">
+                        <h3>Our Mission</h3>
+                        <div class="details">
+                            <p>Our mission is to empower our clients with the tools and resources they need to achieve their goals. We strive to be a reliable partner and to consistently exceed expectations.</p>
+                        </div>
+                        </li>
+                    </ul>
                 </div>
 
-                <!--Ammount Due-->
-                <label>Amount Due*</label>
-                <input type="text">
-                <p>If there is no amount due, make sure you have chosen a "SPONSOR LEVEL" Checks can be mailed to PO Box
-                    1976, Henderson, TN 38340
-                </p>
+            </div>
+        </div>
 
-                <!--Check box-->
-                <label>
-                    <input type="checkbox" name="agreement">
-                    I have read and agree to the sponsorship level I will pay for.
-                </label>
+        
 
-                <!--Electronic Signature-->
-                <label>Electronic Signature*</label>
-                <input type="text" id="Signature">
-
-                <!--Date-->
-                <label>Date</label>
-                <input type="date" id="date">
-
-                <!--Button-->
-                <button>Submit and Pay</button>
-            </form>
-
-        </section>
+        
     </main>
 
     <footer>
@@ -130,9 +163,9 @@
         <div class="footer-upper">
             
             <!--BBQ festival logo-->
-            <img src="/images/bbq-festival-logo.svg">
+            <img src="../images/bbq-festival-logo.svg">
             <!--Hog Callin' logo-->
-            <img src="/images/hog-callin-logo.svg">
+            <img src="../images/hog-callin-logo.svg">
 
             <div class="footer-info">
                 <!--Info-->
