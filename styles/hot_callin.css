@@ -125,6 +125,16 @@ main {
     margin: 30px 0 80px;
 }
 
+.hog-callin-form h1 {
+    font-size: 34px;
+    padding-bottom: 15px;
+}
+
+.hog-callin-form h2 {
+    padding: 10px 0;
+    font-size: 25px;
+}
+
 .hog-callin-form label {
     display: block;
     margin-top: 15px;
@@ -157,7 +167,6 @@ main {
     cursor: pointer;
     margin-top: 15px;
 }
-
 
 /* Footer Section */
 
