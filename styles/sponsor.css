@@ -93,10 +93,41 @@ body {
     padding: 1rem;
 }
 
+.sponsor-form {
+    width: 50%;
+}
+
+.sponsor-form p {
+    color: var(--orange);
+    font-weight: bold;
+}
+
 form {
     display: flex;
     flex-direction: column;
     padding: 1rem;
+}
+
+form label, h1, h2, h3, p {
+    padding: 1rem;
+}
+
+form input {
+    width: 70%;
+    padding: 8px;
+    margin:5px 0 10px;
+    box-sizing: border-box;
+}
+
+form select {
+    width: 70%;
+    height: 2.5rem;
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid grey;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
 }
 
 .info-list {
