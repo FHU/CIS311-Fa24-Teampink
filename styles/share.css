@@ -135,9 +135,9 @@ main img {
     flex-direction: column;
 }
 
-.right img {
+/* .right img {
     margin: 0 10px;
-}
+} */
 
 .right img:nth-child(odd) {
     margin-top: 20px;
