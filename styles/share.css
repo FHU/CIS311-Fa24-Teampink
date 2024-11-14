@@ -86,12 +86,67 @@ body {
 
 main {
     display: flex;
+    margin: 20px;
+    align-items: center;
+    justify-content: space-around;
 }
 
 main img {
-    width: 20%;
+    width: 40%;
 }
 
+.left h1 {
+    font-size: 48px;
+    padding: 10px;
+}
+
+.upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: center;
+    padding: 10px;
+}
+
+.upload-container p {
+    margin: 0 0 10px;
+    text-align: left;
+    font-size: 30px;
+    font-weight: 100;
+    padding-bottom: 15px;
+}
+
+.upload-container a {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Adjust spacing between text and SVG */
+    text-decoration: none;
+    color: inherit;
+    font-size: 1rem;
+    background-color: var(--hog-green);
+    color: white;
+    padding: 6px;
+    width: 30%;
+}
+
+
+.right {
+    display: flex;
+    flex-direction: column;
+}
+
+.right img {
+    margin: 0 10px;
+}
+
+.right img:nth-child(odd) {
+    margin-top: 20px;
+}
+
+.right img:nth-child(even) {
+    margin-top: 40px;
+    margin-left: 40px;
+}
 /* footer Section */
 
 footer {
