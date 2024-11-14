@@ -27,12 +27,16 @@ nextBtn.addEventListener('click', goToNextImage);
 setInterval(goToNextImage, 1000);
 
 
-// sponsor drop down
-const infoListItems = document.querySelectorAll('.info-list-item');
+function toggleReadMore() {
+    const content = document.getElementById("extraContent");
+    const button = document.getElementById("readMoreBtn");
 
-infoListItems.forEach(item => {
-  item.querySelector('h3').addEventListener('click', () => {
-  item.classList.toggle('expanded');
-  });
-});
+    if (content.style.display === "none") {
+      content.style.display = "block";
+      button.textContent = "Read Less";
+    } else {
+      content.style.display = "none";
+      button.textContent = "Read More";
+    }
+  }
 

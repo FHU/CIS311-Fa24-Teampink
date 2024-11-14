@@ -90,11 +90,42 @@ body {
 }
 
 .sponsor-top {
+    padding: 2rem;
+    margin-bottom: 30px 0 20px;
+    display: flex;
+}
+
+.sponsor-top .info {
+    justify-content: space-between;
+}
+
+.sponsor-top p {
+    font-size: 32px;
+    line-height: 1.5;
+}
+
+.sponsor-top h1 {
+    font-size: 50px;
     padding: 1rem;
+    text-wrap: wrap;
+    /* this needs to be adjust for mobile */
+    width: 30%;
+    color: var(--orange);
+}
+
+.sponsor-top img {
+    width: 100%;
+    height: 25rem;
+    border-radius: 10px;
+    box-shadow: 40px 40px 0 var(--orange);
+    margin-right: 40px;
+    margin-bottom: 60px;
+    margin-top: 40px;
 }
 
 .sponsor-form {
     width: 50%;
+    padding: 1rem;
 }
 
 .sponsor-form p {
@@ -105,11 +136,18 @@ body {
 form {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
 }
 
-form label, h1, h2, h3, p {
-    padding: 1rem;
+form h2, h3, p {
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+}
+
+form label {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    font-weight: bold;
+
 }
 
 form input {
@@ -124,48 +162,78 @@ form select {
     height: 2.5rem;
     padding: 8px;
     font-size: 16px;
-    border: 2px solid grey;
+    border: none;
     background-color: white;
     color: #333;
     cursor: pointer;
 }
 
-.info-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-.info-list-item {
-    border-bottom: 1px solid #ccc;
-    padding: 16px 0;
-}
-
-.info-list-item h3 {
-    margin-top: 0;
-    cursor: pointer;
+.checkbox {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
 }
 
-.info-list-item h3:after {
-    content: "+";
-    font-size: 24px;
-    color: #4CAF50;
-    margin-left: 8px;
+.sponsor-form button {
+    width: 40%;
+    padding: 10px;
+    background-color: var(--orange);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
 }
 
-.info-list-item.expanded h3:after {
-    content: "-";
+.buttons button {
+    width: 20%;
 }
 
-.info-list-item .details {
-    display: none;
+.sponsor-info {
+    padding: 1rem;
+    font-size: 20px;
+    color: var(--orange);
+    font-weight: bold;
+    width: 50%;
+
 }
 
-.info-list-item.expanded .details {
-    display: block;
+.sponsor-info p {
+    width: 50%;
 }
+
+.sponsor-info h1 {
+    font-size: 28px;
+    padding-bottom: 1rem;
+    color: black;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+  /* Read more section styling */
+.read-more-content {
+    display: none; /* Hidden by default */
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding-top: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+  /* Button styling */
+.read-more-btn {
+    background-color: transparent;
+    color: var(--darker-brown);
+    padding: 5px 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-left: 0.5rem;
+}
+
 
 /* footer Section */
 
