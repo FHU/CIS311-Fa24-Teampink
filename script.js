@@ -27,16 +27,4 @@ nextBtn.addEventListener('click', goToNextImage);
 setInterval(goToNextImage, 1000);
 
 
-function toggleReadMore() {
-    const content = document.getElementById("extraContent");
-    const button = document.getElementById("readMoreBtn");
-
-    if (content.style.display === "none") {
-      content.style.display = "block";
-      button.textContent = "Read Less";
-    } else {
-      content.style.display = "none";
-      button.textContent = "Read More";
-    }
-  }
 

@@ -212,25 +212,51 @@ form select {
 }
 
   /* Read more section styling */
-.read-more-content {
-    display: none; /* Hidden by default */
-    overflow: hidden;
-    transition: max-height 0.4s ease;
-    padding-top: 10px;
-    font-size: 1rem;
-    color: #333;
+.accordion {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 1rem;  
 }
 
-  /* Button styling */
-.read-more-btn {
-    background-color: transparent;
-    color: var(--darker-brown);
-    padding: 5px 8px;
-    border: none;
-    cursor: pointer;
-    font-size: 1.5rem;
-    margin-top: 10px;
-    margin-left: 0.5rem;
+.accordion2 {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 1rem; 
+}
+  
+.festival-content {
+  border-bottom: 1px solid #ccc;
+}
+.festival-content:last-child {
+  border-bottom: none;
+}
+.name-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.name-content:hover {
+  background-color: #d9cac3;
+}
+.read-more-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 1rem;
+}
+.read-more-content li {
+  margin: 1rem 0;
+  color: black;
+  width: 100%;
+  font-size: 18px;
+}
+.name-content.active + .read-more-content {
+  max-height: 200px; /* Adjust as needed */
 }
 
 
