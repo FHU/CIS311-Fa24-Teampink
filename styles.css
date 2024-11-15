@@ -280,3 +280,11 @@ footer img {
     justify-content: center;
 
 }
+
+
+/* Small devices (phones) */
+@media (max-width: 600px) {
+    header {
+        background-color: white;
+    }
+}
