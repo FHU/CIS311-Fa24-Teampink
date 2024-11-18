@@ -201,7 +201,7 @@ form select {
 .sponsor-info {
     padding: 1rem;
     font-size: 20px;
-    color: var(--orange);
+    color: black;
     font-weight: bold;
     width: 50%;
 
@@ -225,17 +225,17 @@ form select {
 
   /* Read more section styling */
 .accordion {
-  border: 1px solid #ccc;
-  border-radius: 5px;
   overflow: hidden;
-  margin-bottom: 1rem;  
+  margin-bottom: 1rem; 
+  background-color: #d7c3ba;
+ 
 }
 
 .accordion2 {
-    border: 1px solid #ccc;
-    border-radius: 5px;
     overflow: hidden;
     margin-bottom: 1rem; 
+    background-color: #d7c3ba;
+
 }
   
 .festival-content {
@@ -260,12 +260,15 @@ form select {
   overflow: hidden;
   transition: max-height 0.3s ease;
   padding: 0 1rem;
+  background-color: #d9cac3;
+
 }
 .read-more-content li {
   margin: 1rem 0;
   color: black;
   width: 100%;
   font-size: 18px;
+  font-weight: normal;
 }
 .name-content.active + .read-more-content {
   max-height: 200px; /* Adjust as needed */
