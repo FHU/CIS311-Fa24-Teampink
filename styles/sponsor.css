@@ -90,16 +90,9 @@ main {
     margin: 50px;
 }
 
-.sponsor-main {
-    display: flex;
-    background-color: #92755c4c;
-    /* margin: 1.5rem;
-    padding: 1.5rem; */
-}
-
 .sponsor-top {
     padding: 10px 0;
-    /* margin-bottom: 30px 0 40px; */
+    margin-bottom: 30px 0 40px;
 }
 
 .sponsor-top .info {
@@ -111,7 +104,6 @@ main {
     font-size: 24px;
     width: 50%;
     line-height: 1.5;
-    align-items: center;
 }
 
 .sponsor-top h1 {
@@ -119,17 +111,23 @@ main {
     padding: 20px 0;
     text-wrap: wrap;
     /* this needs to be adjust for mobile */
-    width: 30%;
+    width: 50%;
     color: var(--orange);
 }
 
 .sponsor-top img {
     width: 38%;
     /* background-color: var(--brown); */
-    border-radius: 10px;
-    box-shadow: 40px 40px 0 var(--orange);
-    margin-right: 40px;
+    box-shadow: 30px 30px 0 var(--orange);
+    margin-right: 30px;
     margin-bottom: 50px;
+}
+
+.sponsor-main {
+    display: flex;
+    background-color: var(--beige);
+    padding: 50px;
+    margin: 30px 0 80px;
 }
 
 .sponsor-form {
@@ -184,11 +182,16 @@ form select {
 .sponsor-form button {
     width: 40%;
     padding: 10px;
-    background-color: var(--orange);
-    color: #fff;
     border: none;
     cursor: pointer;
     margin-top: 15px;
+    margin-bottom: 8px;
+    background-color: none;
+}
+
+.buttons .file {
+    background-color: var(--orange);
+    color: #fff;
 }
 
 .buttons button {
