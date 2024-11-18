@@ -87,6 +87,30 @@ body {
     color: white;
 } */
 
+.hamburger {
+    display: none; /* Hidden on desktop */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 10;
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
 /* Main Section */
 .intro-section .first-image {
     position: relative;
@@ -302,16 +326,64 @@ footer img {
     /* Header Section */
     head {
         background-color: white;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
 
-    .logo-container img {
-        max-width: 100px; /* Scale down for mobile */
-        margin: 0;
+    .logo-container {
+        width: auto;
+        padding-left: 10px;
     }
 
-    /*Main Section*/
+    .nav-container {
+        display: none; /* Hidden by default */
+        flex-direction: column;
+        position: absolute;
+        top: 70px; /* Adjust based on header height */
+        left: 0;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 9;
+    }
+
+    .nav-container.show {
+        display: flex; /* Display when toggled */
+    }
+
+    .nav-one ul, .nav-two ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-one li, .nav-two li {
+        margin: 10px 0;
+    }
+
+    .nav-one {
+        background-color: var(--brown);
+        padding: 10px 0;
+    }
+
+    .nav-two {
+        background-color: var(--orange);
+        padding: 10px 0;
+    }
+
+    .hamburger {
+        display: flex; /* Visible on mobile */
+    }
+
+    
+    /* Main Section */
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    .image-grid-section .image-grid {
+        display: none;
+    }
+
     .recap-section {
         display: flex;
         flex-direction: column;
