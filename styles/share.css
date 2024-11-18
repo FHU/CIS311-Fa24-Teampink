@@ -121,3 +121,69 @@ footer img {
     justify-content: center;
 
 }
+
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    gap: 20px; 
+    padding: 20px; 
+}
+
+.left {
+    flex: 1; 
+    max-width: 50%; 
+}
+
+.right {
+    position: relative;
+    flex: 1; 
+    max-width: 50%; 
+}
+
+.img_1 {
+    position: absolute; /* Allows precise positioning */
+    top: 0;
+    left: 0;
+    width: 800px; 
+    height: auto;
+    
+    z-index: 2; /* Controls stacking order */
+}
+
+.img_2 {
+    position: absolute;
+    top: 30px; /* Adjust to create overlap */
+    left: 50px; /* Adjust to create overlap */
+    width: 150%; 
+    max-width: 300px; 
+    z-index: 1; /* Sits behind .img_1 */
+}
+
+.img_3 {
+    position: absolute;
+    top: 70px; /* Adjust to create overlap */
+    left: 100px; /* Adjust to create overlap */
+    width: 100%; 
+    max-width: 200px; 
+    z-index: 3; /* Sits in front of .img_1 and .img_2 */
+}
+
+.left h1 {
+    margin-bottom: 15px;
+}
+
+.right img {
+    width: 100%; 
+    max-width: 200px; 
+    margin-bottom: 10px; 
+    display: block; 
+}
+
+.left_text{
+
+    font-size: 2rem; 
+    line-height: 1.5; 
+}
+
