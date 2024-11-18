@@ -54,7 +54,7 @@ body {
 .nav-one {
     background-color: var(--brown);
     color: white;
-    padding: 10px 30px;
+    padding: 10px;
     font-size: medium;
     width: 100%;
 }
@@ -69,8 +69,19 @@ body {
     background-color: white;
     color: var(--orange);
     font-size: larger;
-    padding: 35px;
+    padding: 30px 10px 0 30px;
     width: 100%;
+    overflow: hidden;
+}
+
+.nav-two a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0 0 30px;
+    height: 100%;
+    text-decoration: none;
 }
 
 .nav-one li, .nav-two li {
@@ -82,72 +93,85 @@ body {
     color: inherit;
 }
 
-h1{
-    text-align: center;
-    margin-top: 20px;
+.dropdown {
+    float: left;
+    overflow: hidden;
 }
 
-.image-gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 250px); /* 2 columns with each folder 150px wide */
-    grid-gap: 20px; /* Space between the folders */
-    justify-content: center; /* Center the grid */
-    margin-top: 20px;
-    max-width: 100%;
-    justify-content: center;
- }
- 
-.folder {
-    width: 250px;
-    height: 260px; /* Increased height to accommodate both image and year */
-    background-color: #015453; 
-    text-align: center;
-    display: flex;
-    padding: 10px;
-    flex-direction: column; /* Stack the image and year vertically */
-    align-items: center;
-    font-weight: bold;
-    justify-content: space-between;
-    border-radius: 10px;
-    overflow: hidden; /* Ensures image doesn't overflow outside the folder */
+.dropdown {
+    border: none;
+    outline: none;
+    color: var(--orange);
+    background-color: inherit;
+    margin: 0;
 }
 
- .folder img {
-    width: 100%; /* Fit image to the folder width */
-    height: 220px; /* Set height to ensure a consistent size */
-    object-fit: cover; /* Crop image to fill */
-    border-radius: 10px;
-    
- }
-
- .year {
-    margin-top: 10px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #ffffff;
-    text-align: center;
- }
-
-.submit-button {
-    background-color: #BC4F32; 
-    color: white; 
-    padding: 15px 30px; 
-    font-size: 18px; 
-    font-weight: bold; 
-    text-align: center; 
-    border-radius: 0px; 
-    width: 300px; 
-    margin: 30px auto; 
-    cursor: pointer; 
+.navbar a:hover, .dropdown:hover {
+    color: #c65e3b;
 }
 
-.submit-button:hover {
-    background-color: rgb(189, 104, 0); /* Darken the background on hover */
-}
-
-.button {
-    text-decoration: none;
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--orange);
     color: white;
+    min-width: 160px;
+    max-width: calc(100vw - 32px);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1000;
+    top: 90%;
+    right: 0;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #c65e3b;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+h1{
+    text-align: left;
+    margin-top: 60px;
+}
+
+h3 {
+    width: 50%;
+    font-size: 30px;
+    padding: 3rem 0 0 0;
+}
+
+.facebook-btn {
+    display: inline-block;
+    background-color: #1877F2;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.facebook-btn:hover {
+    background-color: #145DBF;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.facebook-btn i {
+    margin-right: 8px;
 }
 
 footer {
