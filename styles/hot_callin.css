@@ -226,6 +226,12 @@ main {
     margin-top: 15px;
 }
 
+.hog-callin-form button {
+    width: 75%;
+    padding: 8px;
+    margin-top: 10px;
+}
+
 /* Footer Section */
 
 footer {
@@ -264,4 +270,61 @@ footer img {
     display: flex;
     justify-content: center;
 
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Header Section */
+
+
+
+    /* Main Section */
+
+    .hog-callin-top {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hog-callin-top h1 {
+        font-size: 28px;
+        width: 100%;
+    }
+
+    .hog-callin-top p {
+        font-size: 16px;
+        line-height: 1;
+    }
+
+    .hog-callin-top img {
+        width: 100%;
+    }
+
+    /* footer Section */
+
+    footer {
+        padding-top: 10px;
+    }
+
+    footer img {
+        width: auto;
+        height: 4rem;
+        padding: 3px 0;
+    }
+
+    .footer-upper {
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    .footer-info {
+        font-size: 10px;
+        line-height: 1rem;
+        width: 15rem;
+        padding: 4px 0;
+    }
+
+    .footer-lower {
+        font-size: 14px;
+    }
 }
