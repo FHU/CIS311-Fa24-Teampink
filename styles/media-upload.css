@@ -140,16 +140,57 @@ body {
     display: block;
 }
 
-h1{
+.main {
+    display: flex;
+}
+
+.main img {
+    width: 65%;
+    height: auto;
+}
+
+.main h1{
     text-align: left;
     margin-top: 60px;
 }
 
-h3 {
+.main h3 {
     width: 50%;
     font-size: 30px;
     padding: 3rem 0 0 0;
 }
+
+.main i {
+    background-color: blue;
+}
+
+.image-stack {
+    position: relative;
+    width: 800px;
+    height: 533px;
+    margin: 3rem;
+}
+
+.image-stack img {
+    position: absolute;
+    width: 68%;
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+
+.image-stack img:nth-child(1) {
+    transform: rotate(10deg);
+}
+
+/* Stacking with opacity effect */
+.image-stack img:nth-child(3) {
+    transform: rotate(-3deg) translate(120px, 120px) ;
+}
+
+.image-stack img:nth-child(2) {
+    transform: translate(0, 300px) rotate(-2deg);
+}
+
 
 .facebook-btn {
     display: inline-block;
