@@ -297,31 +297,7 @@ footer img {
 }
 
 @media screen and (max-width: 600px) {
-    /* Header Adjustments */
-    .logo-container {
-        position: relative;
-        width: 100%;
-        text-align: center;
-    }
-
-    .logo-container img {
-        margin: 0 auto;
-        padding-top: 8px;
-    }
-
-    .nav-one ul, .nav-two ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-one li, .nav-two li {
-        margin: 8px 0;
-    }
-
-    .nav-two {
-        padding: 15px 10px;
-    }
-
+    
     /* Main Content Adjustments */
     main {
         margin: 20px;
@@ -355,7 +331,7 @@ footer img {
     }
 
     .vendor-form .info {
-        width: 100%;
+        width: 60%;
     }
 
     .vendor-form input,
@@ -387,19 +363,5 @@ footer img {
     }
 
     /* Footer Adjustments */
-    .footer-upper {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    footer img {
-        height: 6rem;
-    }
-
-    .footer-info {
-        width: 100%;
-        padding: 15px;
-        align-items: center;
-    }
+    
 }
