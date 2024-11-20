@@ -38,6 +38,19 @@ body {
     width: 20%;
 }
 
+.logo-container:hover {
+    animation: shake 0.5s;
+    cursor: pointer;
+}
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+
 .logo-container img {
     max-width: 125px;
     padding-top: 12px;
