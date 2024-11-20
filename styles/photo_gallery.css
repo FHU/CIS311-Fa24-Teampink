@@ -347,14 +347,10 @@ footer img {
     }
 
     /* Main */
+
     main {
         padding-top: 4rem;
     }
-
-    /* .nav-one, .nav-two {
-        flex-direction: column;
-        text-align: center;
-    } */
 
     .image-gallery {
         grid-template-columns: 1fr; /* Single column layout */
