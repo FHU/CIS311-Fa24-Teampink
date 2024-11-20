@@ -29,14 +29,14 @@ setInterval(goToNextImage, 1000);
 
 
 document.addEventListener("DOMContentLoaded", () => {
-  const hamburger = document.getElementById("hamburger");
-  const navContainer = document.getElementById(".nav-container");
+  const hamburger = document.querySelector(".hamburger");
+  const navContainer = document.querySelector(".nav-container");
 
-  if(hamburger && navContainer) {
-    hamburger.addEventListener('click', () => {
-      navContainer.classList.toggle('open')
-    })
-  }
+  hamburger.addEventListener("click", () => {
+      navContainer.classList.toggle("show");
+      hamburger.classList.toggle("active");
+  });
 });
+
 
 
