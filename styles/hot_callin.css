@@ -290,24 +290,58 @@ footer img {
     }
 
     .hog-callin-top {
-        display: flex;
-        flex-direction: column;
+        padding: 5px 0;
+        margin-bottom: 15px;
     }
 
     .hog-callin-top h1 {
-        font-size: 28px;
         width: 100%;
+        font-size: 28px;
+        padding: 10px 0;
     }
 
-    .hog-callin-top p {
-        font-size: 16px;
-        line-height: 1;
+    .top p {
+        font-size: 18px;
+    }
+
+    .float-image {
+        float: none;
+        display: block;
+        margin: 15px auto;
+        width: 100%;
+        max-width: 300px;
     }
 
     .hog-callin-top img {
         width: 100%;
-        padding: 0;
-        margin: 0;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .hog-callin-form {
+        padding: 20px;
+        margin: 20px 0 40px;
+    }
+
+    .hog-callin-form h1 {
+        font-size: 24px;
+    }
+
+    .hog-callin-form h2 {
+        font-size: 20px;
+    }
+
+    .hog-callin-form .info {
+        width: 100%;
+    }
+
+    .hog-callin-form input,
+    .hog-callin-form select {
+        width: 60%;
+    }
+
+    .hog-callin-form button {
+        width: 60%;
     }
 
     /* footer Section */
