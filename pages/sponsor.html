@@ -9,6 +9,11 @@
 <body>
     <header class="head">
         <div class="logo-container"><a href="/index.html"><img src="../images/bbqlogo.png"></a></div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+            <span class="bar3"></span>
+        </button>
         <div class="nav-container">
             <nav class="nav-one">
                 <ul>
@@ -425,255 +430,255 @@
             <p>&copy; <span id="year"></span> Your Website Name. All rights reserved.</p>
         </div>
     </footer>
+    <script src="/js/sponsor.js" defer></script>
 
-
-    <script>
-  // Function to toggle the read more content
-    
-  function toggleAccordion(element) {
-            const header = element;
-            const content = header.nextElementSibling;
-            const allContents = document.querySelectorAll('.accordion');
-
-            allContents.forEach((item) => {
-                if (item !== content) {
-                    item.previousElementSibling.classList.remove('active');
-                    item.style.maxHeight = null;
-                }
-            });
-
-            header.classList.toggle('active');
-            if (header.classList.contains('active')) {
-                content.style.maxHeight = content.scrollHeight + 'px';
-            } else {
-                content.style.maxHeight = null;
-            }
-        }
-    
-
-    // function toggleReadMore1() {
-    //     const content1 = document.getElementById("extraContent1");
-    //     const button1 = document.getElementById("readMoreBtn1");
-
-    //     if (content1.style.display === "none") {
-    //     content1.style.display = "block";
-    //     button1.textContent = "+";
-    //     } else {
-    //     content1.style.display = "none";
-    //     button1.textContent = "-";
-    //     }
-
-    // }
-
-    // function toggleReadMore2() {
-    //     const content2 = document.getElementById("extraContent2");
-    //     const button2 = document.getElementById("readMoreBtn2");
-
-    //     if (content2.style.display === "none") {
-    //     content2.style.display = "block";
-    //     button2.textContent = "↑";
-    //     } else {
-    //     content2.style.display = "none";
-    //     button2.textContent = "↓";
-    //     }
-    // }
-
-    // function toggleReadMore3() {
-    //     const content1 = document.getElementById("extraContent1");
-    //     const button1 = document.getElementById("readMoreBtn1");
-
-    //     if (content1.style.display === "none") {
-    //     content1.style.display = "block";
-    //     button1.textContent = "↑";
-    //     } else {
-    //     content1.style.display = "none";
-    //     button1.textContent = "↓";
-    //     }
-
-    // }
-
-    // function toggleReadMore4() {
-    //     const content4 = document.getElementById("extraContent4");
-    //     const button4 = document.getElementById("readMoreBtn4");
-
-    //     if (content4.style.display === "none") {
-    //     content4.style.display = "block";
-    //     button4.textContent = "↑";
-    //     } else {
-    //     content4.style.display = "none";
-    //     button4.textContent = "↓";
-    //     }
-
-    // }
-
-    // function toggleReadMore5() {
-    //     const content5 = document.getElementById("extraContent5");
-    //     const button5 = document.getElementById("readMoreBtn5");
-
-    //     if (content5.style.display === "none") {
-    //     content5.style.display = "block";
-    //     button5.textContent = "↑";
-    //     } else {
-    //     content5.style.display = "none";
-    //     button5.textContent = "↓";
-    //     }
-
-    // }
-
-    // function toggleReadMore6() {
-    //     const content6 = document.getElementById("extraContent6");
-    //     const button6 = document.getElementById("readMoreBtn6");
-
-    //     if (content6.style.display === "none") {
-    //     content6.style.display = "block";
-    //     button6.textContent = "↑";
-    //     } else {
-    //     content6.style.display = "none";
-    //     button6.textContent = "↓";
-    //     }
-
-    // }
-
-    // function toggleReadMore7() {
-    //     const content7 = document.getElementById("extraContent7");
-    //     const button7 = document.getElementById("readMoreBtn7");
-
-    //     if (content7.style.display === "none") {
-    //     content7.style.display = "block";
-    //     button7.textContent = "↑";
-    //     } else {
-    //     content7.style.display = "none";
-    //     button7.textContent = "↓";
-    //     }
-
-    // }
-
-    // function toggleReadMore8() {
-    //     const content8 = document.getElementById("extraContent8");
-    //     const button8 = document.getElementById("readMoreBtn8");
-
-    //     if (content8.style.display === "none") {
-    //     content8.style.display = "block";
-    //     button8.textContent = "↑";
-    //     } else {
-    //     content8.style.display = "none";
-    //     button8.textContent = "↓";
-    //     }
-
-    // }
-
-    // function toggleReadMore9() {
-    //     const content9 = document.getElementById("extraContent9");
-    //     const button9 = document.getElementById("readMoreBtn9");
-
-    //     if (content9.style.display === "none") {
-    //     content9.style.display = "block";
-    //     button9.textContent = "↑";
-    //     } else {
-    //     content9.style.display = "none";
-    //     button9.textContent = "↓";
-    //     }
-
-    // }
-
-    // function toggleReadMore10() {
-    //     const content10 = document.getElementById("extraContent10");
-    //     const button10 = document.getElementById("readMoreBtn10");
-
-    //     if (content10.style.display === "none") {
-    //     content10.style.display = "block";
-    //     button10.textContent = "↑";
-    //     } else {
-    //     content10.style.display = "none";
-    //     button10.textContent = "↓";
-    //     }
-
-    // }
-
-    // function toggleReadMore11() {
-    //     const content11 = document.getElementById("extraContent11");
-    //     const button11 = document.getElementById("readMoreBtn11");
-
-    //     if (content1.style.display === "none") {
-    //     content11.style.display = "block";
-    //     button11.textContent = "↑";
-    //     } else {
-    //     content11.style.display = "none";
-    //     button11.textContent = "↓";
-    //     }
-
-    // }
-
-    // function toggleReadMore12() {
-    //     const content12 = document.getElementById("extraContent12");
-    //     const button12 = document.getElementById("readMoreBtn12");
-
-    //     if (content12.style.display === "none") {
-    //     content12.style.display = "block";
-    //     button12.textContent = "↑";
-    //     } else {
-    //     content12.style.display = "none";
-    //     button12.textContent = "↓";
-    //     }
-
-    // }
-
-    // function toggleReadMore13() {
-    //     const content13 = document.getElementById("extraContent13");
-    //     const button13 = document.getElementById("readMoreBtn13");
-
-    //     if (content13.style.display === "none") {
-    //     content13.style.display = "block";
-    //     button13.textContent = "↑";
-    //     } else {
-    //     content13.style.display = "none";
-    //     button13.textContent = "↓";
-    //     }
-
-    // }
-
-    // function toggleReadMore14() {
-    //     const content14 = document.getElementById("extraContent14");
-    //     const button14 = document.getElementById("readMoreBtn14");
-
-    //     if (content14.style.display === "none") {
-    //     content14.style.display = "block";
-    //     button14.textContent = "↑";
-    //     } else {
-    //     content14.style.display = "none";
-    //     button14.textContent = "↓";
-    //     }
-
-    // }
-
-    // function toggleReadMore15() {
-    //     const content15 = document.getElementById("extraContent15");
-    //     const button15 = document.getElementById("readMoreBtn15");
-
-    //     if (content15.style.display === "none") {
-    //     content15.style.display = "block";
-    //     button15.textContent = "↑";
-    //     } else {
-    //     content15.style.display = "none";
-    //     button15.textContent = "↓";
-    //     }
-
-    // }
-
-    // function toggleReadMore16() {
-    //     const content16 = document.getElementById("extraContent16");
-    //     const button16 = document.getElementById("readMoreBtn16");
-
-    //     if (content16.style.display === "none") {
-    //     content16.style.display = "block";
-    //     button16.textContent = "↑";
-    //     } else {
-    //     content16.style.display = "none";
-    //     button16.textContent = "↓";
-    //     }
-
-    // }
-
-</script>
+    <!-- <script>
+        // Function to toggle the read more content
+          
+        function toggleAccordion(element) {
+                  const header = element;
+                  const content = header.nextElementSibling;
+                  const allContents = document.querySelectorAll('.accordion');
+      
+                  allContents.forEach((item) => {
+                      if (item !== content) {
+                          item.previousElementSibling.classList.remove('active');
+                          item.style.maxHeight = null;
+                      }
+                  });
+      
+                  header.classList.toggle('active');
+                  if (header.classList.contains('active')) {
+                      content.style.maxHeight = content.scrollHeight + 'px';
+                  } else {
+                      content.style.maxHeight = null;
+                  }
+              }
+          
+      
+          function toggleReadMore1() {
+              const content1 = document.getElementById("extraContent1");
+              const button1 = document.getElementById("readMoreBtn1");
+      
+              if (content1.style.display === "none") {
+              content1.style.display = "block";
+              button1.textContent = "+";
+              } else {
+              content1.style.display = "none";
+              button1.textContent = "-";
+              }
+      
+          }
+      
+          function toggleReadMore2() {
+              const content2 = document.getElementById("extraContent2");
+              const button2 = document.getElementById("readMoreBtn2");
+      
+              if (content2.style.display === "none") {
+              content2.style.display = "block";
+              button2.textContent = "↑";
+              } else {
+              content2.style.display = "none";
+              button2.textContent = "↓";
+              }
+          }
+      
+          function toggleReadMore3() {
+              const content1 = document.getElementById("extraContent1");
+              const button1 = document.getElementById("readMoreBtn1");
+      
+              if (content1.style.display === "none") {
+              content1.style.display = "block";
+              button1.textContent = "↑";
+              } else {
+              content1.style.display = "none";
+              button1.textContent = "↓";
+              }
+      
+          }
+      
+          function toggleReadMore4() {
+              const content4 = document.getElementById("extraContent4");
+              const button4 = document.getElementById("readMoreBtn4");
+      
+              if (content4.style.display === "none") {
+              content4.style.display = "block";
+              button4.textContent = "↑";
+              } else {
+              content4.style.display = "none";
+              button4.textContent = "↓";
+              }
+      
+          }
+      
+          function toggleReadMore5() {
+              const content5 = document.getElementById("extraContent5");
+              const button5 = document.getElementById("readMoreBtn5");
+      
+              if (content5.style.display === "none") {
+              content5.style.display = "block";
+              button5.textContent = "↑";
+              } else {
+              content5.style.display = "none";
+              button5.textContent = "↓";
+              }
+      
+          }
+      
+          function toggleReadMore6() {
+              const content6 = document.getElementById("extraContent6");
+              const button6 = document.getElementById("readMoreBtn6");
+      
+              if (content6.style.display === "none") {
+              content6.style.display = "block";
+              button6.textContent = "↑";
+              } else {
+              content6.style.display = "none";
+              button6.textContent = "↓";
+              }
+      
+          }
+      
+          function toggleReadMore7() {
+              const content7 = document.getElementById("extraContent7");
+              const button7 = document.getElementById("readMoreBtn7");
+      
+              if (content7.style.display === "none") {
+              content7.style.display = "block";
+              button7.textContent = "↑";
+              } else {
+              content7.style.display = "none";
+              button7.textContent = "↓";
+              }
+      
+          }
+      
+          function toggleReadMore8() {
+              const content8 = document.getElementById("extraContent8");
+              const button8 = document.getElementById("readMoreBtn8");
+      
+              if (content8.style.display === "none") {
+              content8.style.display = "block";
+              button8.textContent = "↑";
+              } else {
+              content8.style.display = "none";
+              button8.textContent = "↓";
+              }
+      
+          }
+      
+          function toggleReadMore9() {
+              const content9 = document.getElementById("extraContent9");
+              const button9 = document.getElementById("readMoreBtn9");
+      
+              if (content9.style.display === "none") {
+              content9.style.display = "block";
+              button9.textContent = "↑";
+              } else {
+              content9.style.display = "none";
+              button9.textContent = "↓";
+              }
+      
+          }
+      
+          function toggleReadMore10() {
+              const content10 = document.getElementById("extraContent10");
+              const button10 = document.getElementById("readMoreBtn10");
+      
+              if (content10.style.display === "none") {
+              content10.style.display = "block";
+              button10.textContent = "↑";
+              } else {
+              content10.style.display = "none";
+              button10.textContent = "↓";
+              }
+      
+          }
+      
+          function toggleReadMore11() {
+              const content11 = document.getElementById("extraContent11");
+              const button11 = document.getElementById("readMoreBtn11");
+      
+              if (content1.style.display === "none") {
+              content11.style.display = "block";
+              button11.textContent = "↑";
+              } else {
+              content11.style.display = "none";
+              button11.textContent = "↓";
+              }
+      
+          }
+      
+          function toggleReadMore12() {
+              const content12 = document.getElementById("extraContent12");
+              const button12 = document.getElementById("readMoreBtn12");
+      
+              if (content12.style.display === "none") {
+              content12.style.display = "block";
+              button12.textContent = "↑";
+              } else {
+              content12.style.display = "none";
+              button12.textContent = "↓";
+              }
+      
+          }
+      
+          function toggleReadMore13() {
+              const content13 = document.getElementById("extraContent13");
+              const button13 = document.getElementById("readMoreBtn13");
+      
+              if (content13.style.display === "none") {
+              content13.style.display = "block";
+              button13.textContent = "↑";
+              } else {
+              content13.style.display = "none";
+              button13.textContent = "↓";
+              }
+      
+          }
+      
+          function toggleReadMore14() {
+              const content14 = document.getElementById("extraContent14");
+              const button14 = document.getElementById("readMoreBtn14");
+      
+              if (content14.style.display === "none") {
+              content14.style.display = "block";
+              button14.textContent = "↑";
+              } else {
+              content14.style.display = "none";
+              button14.textContent = "↓";
+              }
+      
+          }
+      
+          function toggleReadMore15() {
+              const content15 = document.getElementById("extraContent15");
+              const button15 = document.getElementById("readMoreBtn15");
+      
+              if (content15.style.display === "none") {
+              content15.style.display = "block";
+              button15.textContent = "↑";
+              } else {
+              content15.style.display = "none";
+              button15.textContent = "↓";
+              }
+      
+          }
+      
+          function toggleReadMore16() {
+              const content16 = document.getElementById("extraContent16");
+              const button16 = document.getElementById("readMoreBtn16");
+      
+              if (content16.style.display === "none") {
+              content16.style.display = "block";
+              button16.textContent = "↑";
+              } else {
+              content16.style.display = "none";
+              button16.textContent = "↓";
+              }
+      
+          }
+      
+      </script> -->
 </body>
 </html>
