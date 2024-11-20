@@ -189,7 +189,6 @@ main {
 .sponsor-top img {
     width: 38%;
     /* background-color: var(--brown); */
-    box-shadow: 30px 30px 0 var(--orange);
     margin-right: 30px;
     margin-bottom: 50px;
 }
@@ -390,6 +389,79 @@ footer img {
 
 }
 
-@media (max-width:768px) {
+@media screen and (max-width: 600px) {
+    
+    /* Main Section Adjustments */
+    main {
+        margin: 20px;
+    }
+
+    .sponsor-top .info {
+        flex-direction: column;
+    }
+
+    .sponsor-top .info p {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .sponsor-top h1 {
+        width: 100%;
+        font-size: 32px;
+    }
+
+    .sponsor-top img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .sponsor-main {
+        flex-direction: column;
+        padding: 20px;
+        margin: 20px 0 40px;
+    }
+
+    .sponsor-form, .sponsor-info {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .sponsor-info p {
+        width: 60%;
+        font-size: 16px;
+    }
+
+    .sponsor-info h1 {
+        font-size: 24px;
+    }
+
+    form input, form select {
+        width: 60%;
+    }
+
+    .sponsor-form button {
+        width: 60%;
+    }
+
+    .buttons button {
+        width: 60%;
+        margin-bottom: 10px;
+    }
+
+    /* Accordion Adjustments */
+    .accordion, .accordion2 {
+        margin-bottom: 0.5rem;
+    }
+
+    .name-content {
+        padding: 0.75rem;
+    }
+
+    .read-more-content li {
+        font-size: 16px;
+    }
+
+    /* Footer Adjustments */
     
 }
