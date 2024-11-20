@@ -79,6 +79,14 @@ body {
     list-style: none;
 }
 
+.nav-one li:hover {
+    color: rgb(217, 201, 187);
+}
+
+.nav-two li:hover {
+    color: #c65e3b;
+}
+
 .nav-two {
     background-color: white;
     color: var(--orange);
@@ -356,6 +364,11 @@ footer img {
         background-color: black;
         border-radius: 2px;
         transition: 0.3s;
+    }
+
+    .dropdown-content {
+        left: 0;
+        width: 40%;
     }
 
     /* Main */
