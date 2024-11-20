@@ -175,11 +175,11 @@ main {
 }
 
 .vendor-top h1 {
-    font-size: 40px;
+    font-size: 50px;
     padding: 20px 0;
     text-wrap: wrap;
     /* this needs to be adjust for mobile */
-    width: 30%;
+    width: 50%;
     color: var(--orange);
 }
 

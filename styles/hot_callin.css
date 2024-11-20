@@ -165,11 +165,11 @@ main {
 }
 
 .hog-callin-top h1 {
-    font-size: 40px;
+    font-size: 50px;
     padding: 20px 0;
+    width: 50%;
     text-wrap: wrap;
     /* this needs to be adjust for mobile */
-    width: 20%;
     color: var(--orange);
 }
 
