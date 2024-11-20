@@ -80,6 +80,14 @@ body {
     list-style: none;
 }
 
+.nav-one li:hover {
+    color: rgb(217, 201, 187);
+}
+
+.nav-two li:hover {
+    color: #c65e3b;
+}
+
 .nav-two {
     background-color: white;
     color: var(--orange);
@@ -289,43 +297,54 @@ body {
 
 /* Carousel Design */
 
-.carousel-section {
-    display: flex;
-    justify-content: center;
-    margin: 2rem;
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }
 
-.carousel {
-    width: 100%;
-    max-width: 1200px;
+.logos {
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 60px 0;
     position: relative;
-    margin: 0 auto;
-    overflow-x: hidden;
-  }
+}
 
-  .carousel-container {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
-
-  .carousel-image {
-    flex: 0 0 33.33%;
-    height: 200px;
-    object-fit: cover;
-    padding: 20px;
-  }
-
-  .carousel-controls {
+.logos:before,
+.logos:after {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    font-size: 30px;
-    color: white;
-    text-shadow: 0 0 10px rgba(0,0,0,0.5);
-    cursor: pointer;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0), white);
+}
+
+.logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0), white);
+}
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: 100s slide infinite linear;
+}
+
+.logos-slide img {
+    height: 80px;
+    padding: 0 40px;
 }
 
 /* end of carousel Design */
