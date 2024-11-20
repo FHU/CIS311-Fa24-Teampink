@@ -13,9 +13,9 @@
             <img src="images/bbqlogo.png">
         </div>
         <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+            <span class="bar3"></span>
         </button>
         <div class="nav-container">
             <nav class="nav-one">
@@ -30,7 +30,13 @@
                     <li><a href="pages/hog-callin.html">Hog Callin'</a></li>
                     <!-- still need to add a link -->
                     <li><a href="pages/contact.html">Contact</a></li>
-                    <li><a href="pages/media_upload.html">Photos</a></li>
+                    <li class="dropdown">
+                        <a href="#">Photos</a>
+                        <div class="dropdown-content">
+                            <a href="pages/photo_gallery.html">Photo Gallery</a>
+                            <a href="pages/media_upload.html">Media Upload</a>
+                        </div>
+                    </li>
                     <!--Drop Down menu work-->
                     <!-- <li class="dropdown">
                         <li><a href="#Photo">Photo</a></li>
@@ -46,8 +52,9 @@
 
     <main>
         <section class="intro-section">
+            <div class="ribbon">Oct 4-5</div>
             <div class="first-image"><img src="images/main.png"></div>
-            <div class="image-container"></div>
+            <!-- <div class="image-container"></div> -->
             <h1>Celebrating <span class="highlight">46</span> years of community, family, and togetherness</h1>
             <img class="main-sponsor" src="images/sponsors/centennial_bank.png">
         </section>
@@ -69,19 +76,24 @@
             <!--recap / video-->
             <!-- <h1>2024 Recap!</h1> -->
             <div class="description">
-                <p>The Chester County BBQ Festival continues to be an annual tradition since 1978. The festival is held each year 
-                    on the fourth weekend of September. It features BBQ, live entertainment, fried treats, children’s activities, 
-                    and vendors. The festival is the Henderson/Chester County Chamber of Commerce’s largest fundraising event and 
-                    is made possible by a volunteer committee. There is no admission fee. All events center around the Chester 
-                    County Courthouse lawn in downtown Henderson. This year we will be hosting the 2nd Annual Tennessee State Hog 
-                    Callin’ Championship!
-                </p>
-                <div class="time">
-                    <h3>BBQ Festival Hours:</h3>
-                    <p>Friday: 10:00 am to 10:00 pm</p>
-                    <p>Saturday: 9:00 am to 9:00 pm</p>
-
-                </div>
+                <h2>Chester County BBQ Festival</h2>
+                <ul>
+                    <li><strong>Event Highlights</strong>
+                        <ul>
+                            <li>BBQ, fried treats, and live entertainment.</li>
+                                <li>Children's activities and vendor booths.</li>
+                                <li>2nd Annual Tennessee State Hog Callin’ Championship</li>
+                        </ul>
+                    </li>
+                    <li><strong>Location:</strong> Chester County Courthouse lawn, downtown Henderson</li>
+                    <li><strong>Admission:</strong> Free!</li>
+                    <li><strong>Times</strong>
+                        <ul>
+                            <li>Friday: 10:00 am - 10:00 pm</li>
+                            <li>Saturday: 9:00 am - 9:00 pm</li>
+                        </ul>
+                    </li>
+                </ul>
             </div> 
             <div class="video">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/BhZCuKcnS_g?si=MrroRnptjM-dRtN6" 

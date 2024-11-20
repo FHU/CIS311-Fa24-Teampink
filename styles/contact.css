@@ -37,6 +37,19 @@ body {
     width: 20%;
 }
 
+.logo-container:hover {
+    animation: shake 0.5s;
+    cursor: pointer;
+}
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+
 .logo-container img {
     max-width: 125px;
     padding-top: 12px;
@@ -54,7 +67,7 @@ body {
 .nav-one {
     background-color: var(--brown);
     color: white;
-    padding: 10px 30px;
+    padding: 10px;
     font-size: medium;
     width: 100%;
 }
@@ -69,8 +82,19 @@ body {
     background-color: white;
     color: var(--orange);
     font-size: larger;
-    padding: 35px;
+    padding: 30px 10px 8px 30px;
     width: 100%;
+    overflow: hidden;
+}
+
+.nav-two a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0 0 30px;
+    height: 100%;
+    text-decoration: none;
 }
 
 .nav-one li, .nav-two li {
@@ -80,6 +104,57 @@ body {
 .nav-container li a {
     text-decoration: none;
     color: inherit;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown {
+    border: none;
+    outline: none;
+    color: var(--orange);
+    background-color: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover {
+    color: #c65e3b;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--orange);
+    color: white;
+    min-width: 160px;
+    max-width: calc(100vw - 32px);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1000;
+    top: 90%;
+    right: 0;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #c65e3b;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.hamburger {
+    display: none;
 }
 
 /* Main Section */
@@ -203,4 +278,124 @@ footer img {
     display: flex;
     justify-content: center;
 
+}
+
+@media (max-width: 768px) {
+    
+    /* Header */
+    .head {
+        background-color: white;
+        flex-direction: row;
+        align-items: center;
+        display: flex;
+    }
+
+    .logo-container {
+        width: auto;
+        padding-left: 10px;
+    }
+
+    .logo-container img {
+        max-width: 85px;
+        padding-top: 12px;
+        margin-left: 25px;
+        height: auto;
+        display: block;
+    }
+
+    .nav-container {
+        display: none; /* Hidden by default */
+        flex-direction: column;
+        position: absolute;
+        top: 70px; /* Adjust based on header height */
+        left: 0;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 9;
+    }
+
+    .nav-container.show {
+        display: flex; /* Display when toggled */
+    }
+
+    .nav-one ul, .nav-two ul {
+        flex-direction: column;
+        text-align: right;
+    }
+
+    .nav-one li, .nav-two li {
+        margin: 10px 0;
+    }
+
+    .nav-container li a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .hamburger {
+        display: flex; /* Hidden on desktop */
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 25px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        z-index: 10;
+    }
+    
+    .hamburger span {
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: black;
+        border-radius: 2px;
+        transition: 0.3s;
+    }
+
+    /* Main */
+    .contact-top {
+        display: flex;
+        flex-direction: column;
+        padding-top: 6rem;
+        width: 100%;
+    }
+
+    .body {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* Footer */
+    footer {
+        padding-top: 10px;
+    }
+
+    footer img {
+        width: auto;
+        height: 4rem;
+        padding: 3px 0;
+    }
+
+    .footer-upper {
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    .footer-info {
+        font-size: 10px;
+        line-height: 1rem;
+        width: 15rem;
+        padding: 4px 0;
+    }
+
+    .footer-lower {
+        font-size: 14px;
+    }
 }

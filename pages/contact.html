@@ -9,6 +9,11 @@
 <body>
     <header class="head">
         <div class="logo-container"><a href="/index.html"><img src="../images/bbqlogo.png"></a></div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+            <span class="bar3"></span>
+        </button>
         <div class="nav-container">
             <nav class="nav-one">
                 <ul>
@@ -22,7 +27,13 @@
                     <li><a href="/pages/hog-callin.html">Hog Callin'</a></li>
                     <!-- still need to add a link -->
                     <li><a href="/pages/contact.html">Contact</a></li>
-                    <li><a href="/pages/media_upload.html">Photos</a></li>
+                    <li class="dropdown">
+                        <a href="#">Photos</a>
+                        <div class="dropdown-content">
+                            <a href="photo_gallery.html">Photo Gallery</a>
+                            <a href="media_upload.html">Media Upload</a>
+                        </div>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -97,5 +108,6 @@
             <p>&copy; <span id="year"></span> Your Website Name. All rights reserved.</p>
         </div>
     </footer>
+    <!-- <script src="/js/contact.js" defer></script> -->
 </body>
 </html>

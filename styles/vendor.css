@@ -37,6 +37,19 @@ body {
     width: 20%;
 }
 
+.logo-container:hover {
+    animation: shake 0.5s;
+    cursor: pointer;
+}
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+
 .logo-container img {
     max-width: 125px;
     padding-top: 12px;
@@ -54,7 +67,7 @@ body {
 .nav-one {
     background-color: var(--brown);
     color: white;
-    padding: 10px 30px;
+    padding: 10px;
     font-size: medium;
     width: 100%;
 }
@@ -69,8 +82,19 @@ body {
     background-color: white;
     color: var(--orange);
     font-size: larger;
-    padding: 35px;
+    padding: 30px 10px 8px 30px;
     width: 100%;
+    overflow: hidden;
+}
+
+.nav-two a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0 0 30px;
+    height: 100%;
+    text-decoration: none;
 }
 
 .nav-one li, .nav-two li {
@@ -80,6 +104,53 @@ body {
 .nav-container li a {
     text-decoration: none;
     color: inherit;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown {
+    border: none;
+    outline: none;
+    color: var(--orange);
+    background-color: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover {
+    color: #c65e3b;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--orange);
+    color: white;
+    min-width: 160px;
+    max-width: calc(100vw - 32px);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1000;
+    top: 90%;
+    right: 0;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #c65e3b;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 /* Main Section */
@@ -223,4 +294,112 @@ footer img {
     display: flex;
     justify-content: center;
 
+}
+
+@media screen and (max-width: 600px) {
+    /* Header Adjustments */
+    .logo-container {
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo-container img {
+        margin: 0 auto;
+        padding-top: 8px;
+    }
+
+    .nav-one ul, .nav-two ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-one li, .nav-two li {
+        margin: 8px 0;
+    }
+
+    .nav-two {
+        padding: 15px 10px;
+    }
+
+    /* Main Content Adjustments */
+    main {
+        margin: 20px;
+    }
+
+    /* Vendor Top Section */
+    .vendor-top h1 {
+        width: 100%;
+        font-size: 32px;
+    }
+
+    .vendor-top .info {
+        flex-direction: column;
+    }
+
+    .vendor-top .info p {
+        width: 100%;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .vendor-top img {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    /* Vendor Form Adjustments */
+    .vendor-form {
+        padding: 20px;
+        margin: 20px 0 40px;
+    }
+
+    .vendor-form .info {
+        width: 100%;
+    }
+
+    .vendor-form input,
+    .vendor-form select {
+        width: 100%;
+    }
+
+    .vendor-form button {
+        width: 100%;
+    }
+
+    .amount {
+        width: 100%;
+    }
+
+    .insurance {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .insurance p {
+        padding: 12px 0;
+    }
+
+    .check input {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Footer Adjustments */
+    .footer-upper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer img {
+        height: 6rem;
+    }
+
+    .footer-info {
+        width: 100%;
+        padding: 15px;
+        align-items: center;
+    }
 }
