@@ -373,6 +373,10 @@ footer img {
     main {
         padding-top: 4rem;
     }
+
+    main h1 {
+        font-size: 28px;
+    }
     
     /* Footer */
     footer {
