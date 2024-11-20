@@ -266,10 +266,13 @@ body {
 }
 
 .recap-section .description{
-    font-size: 18.5px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
-.recap-section ul {
+/* .recap-section ul {
     list-style-type: disc;
     padding-left: 20px;
 }
@@ -277,7 +280,7 @@ body {
 .recap-section ul ul {
     list-style-type: circle;
     padding-left: 40px;
-}
+} */
 
 .recap-section .video iframe {
     border-radius: 10px;
