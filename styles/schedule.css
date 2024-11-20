@@ -184,7 +184,7 @@ main h1 {
 
 .event {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin: 20px 0;
 }
 
@@ -207,13 +207,12 @@ main h1 {
 }
 
 .event-details {
-    flex-grow: 1;
+    /* flex-grow: 1; */
     display: flex;
     gap: 10px;
     align-items: center;
     /* margin: 12px 0; */
     padding: 14px 0;
-
 }
 
 .time-tag-event {
@@ -225,7 +224,6 @@ main h1 {
     display: inline-block;
     margin: 8px 0;
     text-wrap: wrap;
-    width: fit-content;
 }
 
 .time-tag-entertainment{
@@ -235,7 +233,7 @@ main h1 {
     font-weight: bold;
     border-radius: 5px;
     display: inline-block;
-    margin-bottom: 8px;
+    margin: 8px 0; 
 }
 
 .event h2 {
