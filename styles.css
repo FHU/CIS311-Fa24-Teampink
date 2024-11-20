@@ -503,6 +503,7 @@ footer img {
 
     .ribbon{
         margin-left: 30px;
+        font-size: 20px;
         /* look into how to make it smaller */
     }
 
@@ -513,7 +514,7 @@ footer img {
 
     .main-sponsor {
         padding: 15px;
-        width: 30%;
+        width: 40%;
     }
 
     .image-grid-section .image-grid {
@@ -524,12 +525,21 @@ footer img {
         display: flex;
         flex-direction: column;
         gap: 2rem;
+        align-items: center;
+    }
+
+    .recap-section .description{
+        font-size: 18.5px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
     }
 
     .recap-section .video iframe {
-        border-radius: 10px;
-        justify-items: center;
-        width: auto;
+        width: fit-content;
     }
 
     /* footer Section */
