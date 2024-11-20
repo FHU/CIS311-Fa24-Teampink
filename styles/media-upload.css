@@ -161,6 +161,7 @@ body {
 
 .main {
     display: flex;
+    padding: 8px;
     /* align-items: center; */
 }
 
@@ -179,24 +180,26 @@ body {
 }
 
 .main h3 {
-    
     font-size: 1.5rem;
     font-weight: 600; 
     color: #000000; 
     margin: 40px;
     line-height: 1.6; 
     font-weight: 100;
-
 }
 
 .main i {
     color: #3b5998; 
     font-size: 1.5rem;
-    margin-left: 5px; 
+    margin-left: 5px;
 }
 
 .main .content {
     margin-top: 6rem;
+}
+
+.mobile-image {
+    display: none;
 }
 
 .image-stack {
@@ -250,9 +253,8 @@ body {
 }
 
 .facebook-btn:hover {
-        background-color: #1e6d6f; 
-        transform: scale(1.05); 
-    
+    background-color: #1e6d6f; 
+    transform: scale(1.05); 
 }
 
 .facebook-btn i {
@@ -297,8 +299,6 @@ footer img {
 }
 
 @media (max-width: 768px) {
-    /* Header */
-
     /* Header */
 
     .logo-container {
@@ -369,26 +369,29 @@ footer img {
     }
 
     /* Main */
-    main {
-        padding-top: 4rem;
+
+    .main .content {
+        margin-top: 4rem;
     }
 
-    .image-gallery {
-        grid-template-columns: 1fr; /* Single column layout */
-        padding: 0 10px;
-        margin-left: 70px;
+    .content {
+        display: flex;
+        flex-direction: column;
     }
 
-    .folder {
-        width: 90%;
-        height: auto; /* Adjusts height for smaller screens */
-        padding: 8px;
+    .mobile-image {
+        width: 60%;
+        height: auto;
+        display: block;
+        padding-left: 40px;
     }
 
-    .submit-button {
-        width: 90%;
-        font-size: 14px;
-        padding: 10px 20px;
+    .image-stack {
+        display: none;
+    }
+
+    .facebook-btn {
+        margin-bottom: 20px;
     }
 
     /* Footer */
