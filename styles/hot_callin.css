@@ -346,7 +346,35 @@ footer img {
 
     /* footer Section */
 
-    .footer-upper {
+        /* Footer */
+        footer {
+            padding-top: 10px;
+        }
+    
+        footer img {
+            width: auto;
+            height: 4rem;
+            padding: 3px 0;
+        }
+    
+        .footer-upper {
+            display: flex;
+            justify-content: space-around;
+        }
+    
+    
+        .footer-info {
+            font-size: 10px;
+            line-height: 1rem;
+            width: 15rem;
+            padding: 4px 0;
+        }
+    
+        .footer-lower {
+            font-size: 14px;
+        }
+
+    /* .footer-upper {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -364,6 +392,6 @@ footer img {
 
     .footer-info {
         text-align: center;
-    }
+    } */
 
 }

@@ -280,10 +280,32 @@ footer img {
         padding: 10px 20px;
     }
 
+    /* Footer */
+    footer {
+        padding-top: 10px;
+    }
+
+    footer img {
+        width: auto;
+        height: 4rem;
+        padding: 3px 0;
+    }
+
     .footer-upper {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    .footer-info {
+        font-size: 10px;
+        line-height: 1rem;
+        width: 15rem;
+        padding: 4px 0;
+    }
+
+    .footer-lower {
+        font-size: 14px;
     }
     
 }
