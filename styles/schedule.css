@@ -21,6 +21,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* header section */
 .head {
     display: flex;
     flex-direction: column;
@@ -82,6 +83,89 @@ body {
     color: inherit;
 }
 
+/* Main Section */
+.event-schedule {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px 20px;
+    padding: 20px;
+}
+
+.event {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.date {
+    text-align: center;
+    margin:0 30px;
+    color: var(--orange);
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+.date .day {
+    font-size: 44px;
+    line-height: 1;
+}
+
+.date .month {
+    font-size: 30px;
+}
+
+.event-details {
+    flex-grow: 1;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    /* margin: 12px 0; */
+    padding: 14px 0;
+
+}
+
+.time-tag-event {
+    background-color: var(--orange);
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 8px 0;
+    height: 30px;
+
+}
+
+.time-tag-entertainment{
+    background-color: var(--hog-green);
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.event h2 {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.event h3 {
+    font-size: 18px;
+}
+
+.event p {
+    font-size: 16px;
+}
+
+.divider {
+    border: 0;
+    border-top: 2px solid #D0D4DC;
+    margin: 10px 30px;
+}
+
 /* footer Section */
 
 footer {
@@ -106,7 +190,6 @@ footer img {
 .footer-info {
     font-size: 12px;
     line-height: 1.5rem;
-
     display: flex;
     flex-direction: column;
     width: 15rem;
@@ -119,5 +202,4 @@ footer img {
     padding: 0.5rem;
     display: flex;
     justify-content: center;
-
 }

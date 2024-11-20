@@ -9,7 +9,14 @@
 </head>
 <body>
     <header class="head">
-        <div class="logo-container"><img src="images/bbqlogo.png"></div>
+        <div class="logo-container">
+            <img src="images/bbqlogo.png">
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <div class="nav-container">
             <nav class="nav-one">
                 <ul>
@@ -23,7 +30,7 @@
                     <li><a href="pages/hog-callin.html">Hog Callin'</a></li>
                     <!-- still need to add a link -->
                     <li><a href="pages/contact.html">Contact</a></li>
-                    <li><a href="pages/media_upload.html">Photo</a></li>
+                    <li><a href="pages/media_upload.html">Photos</a></li>
                     <!--Drop Down menu work-->
                     <!-- <li class="dropdown">
                         <li><a href="#Photo">Photo</a></li>
@@ -40,6 +47,7 @@
     <main>
         <section class="intro-section">
             <div class="first-image"><img src="images/main.png"></div>
+            <div class="image-container"></div>
             <h1>Celebrating <span class="highlight">46</span> years of community, family, and togetherness</h1>
             <img class="main-sponsor" src="images/sponsors/centennial_bank.png">
         </section>
@@ -59,7 +67,22 @@
 
         <section class="recap-section">
             <!--recap / video-->
-            <h1>2024 Recap!</h1>
+            <!-- <h1>2024 Recap!</h1> -->
+            <div class="description">
+                <p>The Chester County BBQ Festival continues to be an annual tradition since 1978. The festival is held each year 
+                    on the fourth weekend of September. It features BBQ, live entertainment, fried treats, children’s activities, 
+                    and vendors. The festival is the Henderson/Chester County Chamber of Commerce’s largest fundraising event and 
+                    is made possible by a volunteer committee. There is no admission fee. All events center around the Chester 
+                    County Courthouse lawn in downtown Henderson. This year we will be hosting the 2nd Annual Tennessee State Hog 
+                    Callin’ Championship!
+                </p>
+                <div class="time">
+                    <h3>BBQ Festival Hours:</h3>
+                    <p>Friday: 10:00 am to 10:00 pm</p>
+                    <p>Saturday: 9:00 am to 9:00 pm</p>
+
+                </div>
+            </div> 
             <div class="video">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/BhZCuKcnS_g?si=MrroRnptjM-dRtN6" 
                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
@@ -100,7 +123,7 @@
         <div class="footer-upper">
             
             <!--BBQ festival logo-->
-            <img src="images/bbq-festival-logo.svg">
+            <img src="images/bbqlogo.png">
             <!--Hog Callin' logo-->
             <img src="images/hog-callin-logo.svg">
 
@@ -108,7 +131,7 @@
                 <!--Info-->
                 <h3>Henderson / Chester County Chamber of Commerce</h3>
                 <p>111 East Main Street PO Box 1976 Henderson, TN 38340</p>
-                <p>Phone: 731-989-5222</p>
+                <p>731-989-5222</p>
             </div>
 
         </div>

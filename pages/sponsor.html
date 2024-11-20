@@ -31,8 +31,13 @@
     <main>
         <section class="sponsor-top">
             <h1>Sponsor Registration</h1>
-            <p>By becoming a festival sponsor, your business can support our community and chamber while taking advantage of a great marketing opportunity!</p>
-            <img src="../images/ride.png">
+            <div class="info">
+                <p>By becoming a festival sponsor, your business can support our community and chamber while taking advantage of a great marketing opportunity!
+                    The festival is the Henderson/Chester County Chamber of Commerce’s largest fundraising event and is made possible by a volunteer committee. There is no
+                    admission fee. All events center around the Chester County Courthouse lawn in downtown Henderson.
+                </p>  
+                <img src="../images/ride.png">
+            </div>
         </section>
 
         <div class="sponsor-main">
@@ -91,7 +96,7 @@
                         <h3>Sponsor Logo</h3>
                         <div class="buttons">
                             <!--Button - Choose File-->
-                            <button>Choose File</button>
+                            <button class="file">Choose File</button>
                             <!--Button - No File chosen-->
                             <button>No file chosen</button>
                         </div>
@@ -106,7 +111,7 @@
                     </p>
 
                     <!--Check box-->
-                    <label>
+                    <label class="checkbox">
                         <input type="checkbox" name="agreement">
                         I have read and agree to the sponsorship level I will pay for.
                     </label>
@@ -127,27 +132,262 @@
             
             <div class="sponsor-info">
 
-                <div class="sponsor-option">
-                    <ul class="info-list">
-                        <li class="info-list-item">
-                        <h3>Company Overview</h3>
-                        <div class="details">
-                            <p>We are a leading provider of innovative solutions in the industry. Our team of experts is dedicated to delivering high-quality products and exceptional customer service.</p>
+                <h1>Festival Sponsors</h1>                
+
+                <div class="accordion">
+                    <div class="festival-container">
+                        <div class="option">
+                            <div class="name-content" onclick="toggleAccordion(this)">
+                                <span>Grand Champion $1000</span>
+                                <span>+</span>
+                            </div>
+                            
+                            <div class="read-more-content" id="extraContent1">
+                                <li>Company name on the downtown streetlights</li>
+                                <li>Linked logo to your website or social media page from the BBQ Festival website</li>
+                                <li>Company name on signage displayed during the festival</li>
+                                <li>Company logo on street decal during the festival</li>
+                                <li>Company logo in the Chester County Independent : Thank 'Q' ad</li>
+                                <li>10’x10’ booth space during festival</li>
+                                <li>six (6) tickets to sponsorship luncheon</li>
+                            </div> 
                         </div>
-                        </li>
-                        <li class="info-list-item">
-                        <h3>Our History</h3>
-                        <div class="details">
-                            <p>Founded in 2010, our company has quickly grown to become a trusted name in the market. We have a long-standing commitment to excellence and a track record of successful projects.</p>
+                        <div class="option">
+                            <div class="name-content" onclick="toggleAccordion(this)">
+                                <span>Blue Ribbon $750</span>
+                                <span>+</span>
+                            </div>
+                            <!-- Read more content section -->
+                            <div class="read-more-content" id="extraContent2">
+                                <li>Recognition on the BBQ Festival website</li>
+                                <li>Company name on signage displayed during the festival</li>
+                                <li>Company logo on street decal during the festival</li>
+                                <li>Company name in the Chester County Independent : Thank 'Q' ad</li>
+                                <li>10' × 10' booth space during the festival</li>
+                                <li>Four (4) tickets to the sponsorship luncheon</li>
+                            </div>
                         </div>
-                        </li>
-                        <li class="info-list-item">
-                        <h3>Our Mission</h3>
-                        <div class="details">
-                            <p>Our mission is to empower our clients with the tools and resources they need to achieve their goals. We strive to be a reliable partner and to consistently exceed expectations.</p>
+
+                        <div class="option">
+                            <div class="name-content" onclick="toggleAccordion(this)">
+                                <span>Whole Hog $500</span>
+                                <span>+</span>
+                            </div>
+                            <!-- Read more content section -->
+                            <div class="read-more-content" id="extraContent3">
+                                <li>Recognition on the BBQ Festival website</li>
+                                <li>Company name on signage displayed during the festival</li>
+                                <li>Company name in the Chester County Independent : Thank 'Q' ad</li>
+                                <li>10'x 10' booth space during the festival</li>
+                                <li>Two (2) tickets to the sponsorship luncheon</li>
+                            </div>
+                            <div class="option">
+                                <div class="name-content" onclick="toggleAccordion(this)">
+                                    <span>Pit Crew $300</span>
+                                    <span>+</span>
+                                </div>
+                                <!-- Read more content section -->
+                                <div class="read-more-content" id="extraContent4">
+                                    <li>Recognition on the BBQ Festival website</li>
+                                    <li>Company name on signage displayed during the festival</li>
+                                    <li>Company name in the Chester County Independent: Thank 'Q' ad</li>
+                                    <li>Two (2) tickets to the sponsorship luncheon</li>
+                                </div>
+                            </div>
                         </div>
-                        </li>
-                    </ul>
+                    </div>
+                </div>
+
+                <h1>Event Sponsor</h1>
+
+                <div class="accordion2">
+                        <div class="event-content">
+                            <div class="option">
+                                <div class="name-content" onclick="toggleAccordion(this)">
+                                    <span>Public Eating Tent $1000</span>
+                                    <span>+</span>
+                                </div>
+                                <div class="read-more-content" id="extraContent5">
+                                    <li>company name on the downtown streetlights</li>
+                                    <li>linked logo to your website or social media page from the BBQ Festival website</li>
+                                    <li>company name on signage displayed during the festival</li>
+                                    <li>company logo on street decal during the festival</li>
+                                    <li>company logo in the Chester County Independent: Thank 'Q' ad</li>
+                                    <li>10'x 10' booth space during the festival</li>
+                                    <li>six (6) tickets to sponsorship luncheon</li>
+                                </div> 
+                            </div>
+                            <div class="option">
+                                <div class="name-content" onclick="toggleAccordion(this)">
+                                    <span>Swine and Shine Car Show $1000</span>
+                                    <span>+</span>
+                                </div>
+                                <!-- Read more content section -->
+                                <div class="read-more-content" id="extraContent6">
+                                    <li>company name mentioned each time the event is promoted</li>
+                                    <li>company name on the downtown streetlights</li>
+                                    <li>linked logo to your website or social media page from the BBQ Festival website</li>
+                                    <li>company name on signage displayed during the festival</li>
+                                    <li>company logo on street decal during the festival</li>
+                                    <li>company logo in the Chester County Independent: Thank 'Q' ad</li>
+                                    <li>10'x 10' booth space during the festival</li>
+                                    <li>six (6) tickets to sponsorship luncheon</li>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="name-content" onclick="toggleAccordion(this)">
+                                    <span>Antique Tractor Show $500</span>
+                                    <span>+</span>
+                                </div>
+                                <!-- Read more content section -->
+                                <div class="read-more-content" id="extraContent7">
+                                    <li>company name mentioned each time the event is promoted</li>
+                                    <li>recognition on the BBQ Festival website</li>
+                                    <li>company name on signage displayed during the festival</li>
+                                    <li>company name in the Chester County Independent: Thank 'Q' ad</li>
+                                    <li>10'× 10' booth space during the festival</li>
+                                    <li>two (2) tickets to the sponsorship luncheon</li>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="name-content" onclick="toggleAccordion(this)">
+                                    <span>Gameday Tailgate Zone $500</span>
+                                    <span>+</span>
+                                </div>
+                                <!-- Read more content section -->
+                                <div class="read-more-content" id="extraContent8">
+                                    <li>company name mentioned each time the event is promoted</li>
+                                    <li>recognition on the BBQ Festival website</li>
+                                    <li>company name on signage displayed during the festival</li>
+                                    <li>company name in the Chester County Independent: Thank 'Q' ad</li>
+                                    <li>10'x 10' booth space during the festival</li>
+                                    <li>two (2) tickets to the sponsorship luncheon</li>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="name-content" onclick="toggleAccordion(this)">
+                                    <span>Hog Wild Corn Hole Tournament $500</span>
+                                    <span>+</span>
+                                </div>
+                                <div class="read-more-content" id="extraContent9">
+                                    <li>company name mentioned each time the event is promoted</li>
+                                    <li>recognition on the BBQ Festival website</li>
+                                    <li>company name on signage displayed during the festival</li>
+                                    <li>company name in the Chester County Independent: Thank 'Q' ad</li>
+                                    <li>10'x 10' booth space during the festival</li>
+                                    <li>two (2) tickets to the sponsorship luncheon</li>
+                                </div> 
+                            </div>
+                            <div class="option">
+                                <div class="name-content" onclick="toggleAccordion(this)">
+                                    <span>Oink' N' Doink' Dunkin' Booth $500</span>
+                                    <span>+</span>
+                                </div>
+                                                            
+                                <!-- Read more content section -->
+                                <div class="read-more-content" id="extraContent10">
+                                    <li>company name mentioned each time the event is promoted</li>
+                                    <li>recognition on the BBQ Festival website</li>
+                                    <li>company name on signage displayed during the festival</li>
+                                    <li>company name in the Chester County Independent : Thank 'Q' ad</li>
+                                    <li>10'x 10' booth space during the festival</li>
+                                    <li>two (2) tickets to the sponsorship luncheon</li>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="name-content" onclick="toggleAccordion(this)">
+                                    <span>First Responders Appreciation + Touch-A-Truck $300</span>
+                                    <span>+</span>
+                                </div>
+                                                            
+                                <!-- Read more content section -->
+                                <div class="read-more-content" id="extraContent11">
+                                    <li>company name mentioned each time the event is promoted</li>
+                                    <li>recognition on the BBQ Festival website</li>
+                                    <li>company name on signage displayed during the festival</li>
+                                    <li>company name in the Chester County Independent: Thank 'O' ad</li>
+                                    <li>two (2) tickets to the sponsorship luncheon</li>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="name-content" onclick="toggleAccordion(this)">
+                                    <span>Little Pig Town: Childrens' Ride Area $300</span>
+                                    <span>+</span>
+                                </div>
+                                                            
+                                <!-- Read more content section -->
+                                <div class="read-more-content" id="extraContent12">
+                                    <li>company name mentioned each time the event is promoted</li>
+                                    <li>recognition on the BBQ Festival website</li>
+                                    <li>company name on signage displayed during the festival</li>
+                                    <li>company name in the Chester Count Independent: Thank 'Q' ad</li>
+                                    <li>two (2) tickets to the sponsorship luncheon</li>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="name-content" onclick="toggleAccordion(this)">
+                                    <span>Piglet Pen: Toddlers' Area $300</span>
+                                    <span>+</span>
+                                </div>
+                                                            
+                                <div class="read-more-content" id="extraContent13">
+                                    <li>company name mentioned each time the event is promoted</li>
+                                    <li>recognition on the BBQ Festival website</li>
+                                    <li>company name on signage displayed during the festival</li>
+                                    <li>company name in the Chester County Independent: Thank 'Q' ad</li>
+                                    <li>two (2) tickets to the sponsorship luncheon</li>
+                                </div> 
+                            </div>
+                            <div class="option">
+                                <div class="name-content" onclick="toggleAccordion(this)">
+                                    <span>Piglet Splash, Dash, and Roll $300</span>
+                                    <span>+</span>
+                                </div>
+                                                        
+                                <!-- Read more content section -->
+                                <div class="read-more-content" id="extraContent14">
+                                    <li>company name mentioned each time the event is promoted</li>
+                                    <li>recognition on the BBQ Festival website</li>
+                                    <li>company name on signage displayed during the festival</li>
+                                    <li>company name in the Chester County Independent: Thank 'Q' ad</li>
+                                    <li>two (2) tickets to the sponsorship luncheon</li>
+
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="name-content" onclick="toggleAccordion(this)">
+                                    <span>Porky's Pedal Tractor Pull $300</span>
+                                    <span>+</span>
+                                </div>
+                                
+                            
+                                <!-- Read more content section -->
+                                <div class="read-more-content" id="extraContent15">
+                                    <li>company name mentioned each time the event is promoted</li>
+                                    <li>recognition on the BBQ Festival website</li>
+                                    <li>company name on signage displayed during the festival</li>
+                                    <li>company name in the Chester County Independent: Thank 'Q' ad</li>
+                                    <li>two (2) tickets to the sponsorship luncheon</li>
+                                </div>
+                                </div>
+                            <div class="option">
+                                <div class="name-content" onclick="toggleAccordion(this)">
+                                    <span>Princess Tea + Super Hero Hangout $300</span>
+                                    <span>+</span>
+                                </div>
+                                
+                            
+                                <!-- Read more content section -->
+                                <div class="read-more-content" id="extraContent16">
+                                    <li>company name mentioned each time the event is promoted</li>
+                                    <li>recognition on the BBQ Festival website</li>
+                                    <li>company name on signage displayed during the festival</li>
+                                    <li>company name in the Chester County Independent: Thank 'Q' ad</li>
+                                    <li>two (2) tickets to the sponsorship luncheon</li>
+                                </div>
+                            </div>
+                    </div>
+        
                 </div>
 
             </div>
@@ -163,7 +403,7 @@
         <div class="footer-upper">
             
             <!--BBQ festival logo-->
-            <img src="../images/bbq-festival-logo.svg">
+            <img src="../images/bbqlogo.png">
             <!--Hog Callin' logo-->
             <img src="../images/hog-callin-logo.svg">
 
@@ -171,7 +411,7 @@
                 <!--Info-->
                 <h3>Henderson / Chester County Chamber of Commerce</h3>
                 <p>111 East Main Street PO Box 1976 Henderson, TN 38340</p>
-                <p>Phone: 731-989-5222</p>
+                <p>731-989-5222</p>
             </div>
 
         </div>
@@ -179,5 +419,255 @@
             <p>&copy; <span id="year"></span> Your Website Name. All rights reserved.</p>
         </div>
     </footer>
+
+
+    <script>
+  // Function to toggle the read more content
+    
+  function toggleAccordion(element) {
+            const header = element;
+            const content = header.nextElementSibling;
+            const allContents = document.querySelectorAll('.accordion');
+
+            allContents.forEach((item) => {
+                if (item !== content) {
+                    item.previousElementSibling.classList.remove('active');
+                    item.style.maxHeight = null;
+                }
+            });
+
+            header.classList.toggle('active');
+            if (header.classList.contains('active')) {
+                content.style.maxHeight = content.scrollHeight + 'px';
+            } else {
+                content.style.maxHeight = null;
+            }
+        }
+    
+
+    // function toggleReadMore1() {
+    //     const content1 = document.getElementById("extraContent1");
+    //     const button1 = document.getElementById("readMoreBtn1");
+
+    //     if (content1.style.display === "none") {
+    //     content1.style.display = "block";
+    //     button1.textContent = "+";
+    //     } else {
+    //     content1.style.display = "none";
+    //     button1.textContent = "-";
+    //     }
+
+    // }
+
+    // function toggleReadMore2() {
+    //     const content2 = document.getElementById("extraContent2");
+    //     const button2 = document.getElementById("readMoreBtn2");
+
+    //     if (content2.style.display === "none") {
+    //     content2.style.display = "block";
+    //     button2.textContent = "↑";
+    //     } else {
+    //     content2.style.display = "none";
+    //     button2.textContent = "↓";
+    //     }
+    // }
+
+    // function toggleReadMore3() {
+    //     const content1 = document.getElementById("extraContent1");
+    //     const button1 = document.getElementById("readMoreBtn1");
+
+    //     if (content1.style.display === "none") {
+    //     content1.style.display = "block";
+    //     button1.textContent = "↑";
+    //     } else {
+    //     content1.style.display = "none";
+    //     button1.textContent = "↓";
+    //     }
+
+    // }
+
+    // function toggleReadMore4() {
+    //     const content4 = document.getElementById("extraContent4");
+    //     const button4 = document.getElementById("readMoreBtn4");
+
+    //     if (content4.style.display === "none") {
+    //     content4.style.display = "block";
+    //     button4.textContent = "↑";
+    //     } else {
+    //     content4.style.display = "none";
+    //     button4.textContent = "↓";
+    //     }
+
+    // }
+
+    // function toggleReadMore5() {
+    //     const content5 = document.getElementById("extraContent5");
+    //     const button5 = document.getElementById("readMoreBtn5");
+
+    //     if (content5.style.display === "none") {
+    //     content5.style.display = "block";
+    //     button5.textContent = "↑";
+    //     } else {
+    //     content5.style.display = "none";
+    //     button5.textContent = "↓";
+    //     }
+
+    // }
+
+    // function toggleReadMore6() {
+    //     const content6 = document.getElementById("extraContent6");
+    //     const button6 = document.getElementById("readMoreBtn6");
+
+    //     if (content6.style.display === "none") {
+    //     content6.style.display = "block";
+    //     button6.textContent = "↑";
+    //     } else {
+    //     content6.style.display = "none";
+    //     button6.textContent = "↓";
+    //     }
+
+    // }
+
+    // function toggleReadMore7() {
+    //     const content7 = document.getElementById("extraContent7");
+    //     const button7 = document.getElementById("readMoreBtn7");
+
+    //     if (content7.style.display === "none") {
+    //     content7.style.display = "block";
+    //     button7.textContent = "↑";
+    //     } else {
+    //     content7.style.display = "none";
+    //     button7.textContent = "↓";
+    //     }
+
+    // }
+
+    // function toggleReadMore8() {
+    //     const content8 = document.getElementById("extraContent8");
+    //     const button8 = document.getElementById("readMoreBtn8");
+
+    //     if (content8.style.display === "none") {
+    //     content8.style.display = "block";
+    //     button8.textContent = "↑";
+    //     } else {
+    //     content8.style.display = "none";
+    //     button8.textContent = "↓";
+    //     }
+
+    // }
+
+    // function toggleReadMore9() {
+    //     const content9 = document.getElementById("extraContent9");
+    //     const button9 = document.getElementById("readMoreBtn9");
+
+    //     if (content9.style.display === "none") {
+    //     content9.style.display = "block";
+    //     button9.textContent = "↑";
+    //     } else {
+    //     content9.style.display = "none";
+    //     button9.textContent = "↓";
+    //     }
+
+    // }
+
+    // function toggleReadMore10() {
+    //     const content10 = document.getElementById("extraContent10");
+    //     const button10 = document.getElementById("readMoreBtn10");
+
+    //     if (content10.style.display === "none") {
+    //     content10.style.display = "block";
+    //     button10.textContent = "↑";
+    //     } else {
+    //     content10.style.display = "none";
+    //     button10.textContent = "↓";
+    //     }
+
+    // }
+
+    // function toggleReadMore11() {
+    //     const content11 = document.getElementById("extraContent11");
+    //     const button11 = document.getElementById("readMoreBtn11");
+
+    //     if (content1.style.display === "none") {
+    //     content11.style.display = "block";
+    //     button11.textContent = "↑";
+    //     } else {
+    //     content11.style.display = "none";
+    //     button11.textContent = "↓";
+    //     }
+
+    // }
+
+    // function toggleReadMore12() {
+    //     const content12 = document.getElementById("extraContent12");
+    //     const button12 = document.getElementById("readMoreBtn12");
+
+    //     if (content12.style.display === "none") {
+    //     content12.style.display = "block";
+    //     button12.textContent = "↑";
+    //     } else {
+    //     content12.style.display = "none";
+    //     button12.textContent = "↓";
+    //     }
+
+    // }
+
+    // function toggleReadMore13() {
+    //     const content13 = document.getElementById("extraContent13");
+    //     const button13 = document.getElementById("readMoreBtn13");
+
+    //     if (content13.style.display === "none") {
+    //     content13.style.display = "block";
+    //     button13.textContent = "↑";
+    //     } else {
+    //     content13.style.display = "none";
+    //     button13.textContent = "↓";
+    //     }
+
+    // }
+
+    // function toggleReadMore14() {
+    //     const content14 = document.getElementById("extraContent14");
+    //     const button14 = document.getElementById("readMoreBtn14");
+
+    //     if (content14.style.display === "none") {
+    //     content14.style.display = "block";
+    //     button14.textContent = "↑";
+    //     } else {
+    //     content14.style.display = "none";
+    //     button14.textContent = "↓";
+    //     }
+
+    // }
+
+    // function toggleReadMore15() {
+    //     const content15 = document.getElementById("extraContent15");
+    //     const button15 = document.getElementById("readMoreBtn15");
+
+    //     if (content15.style.display === "none") {
+    //     content15.style.display = "block";
+    //     button15.textContent = "↑";
+    //     } else {
+    //     content15.style.display = "none";
+    //     button15.textContent = "↓";
+    //     }
+
+    // }
+
+    // function toggleReadMore16() {
+    //     const content16 = document.getElementById("extraContent16");
+    //     const button16 = document.getElementById("readMoreBtn16");
+
+    //     if (content16.style.display === "none") {
+    //     content16.style.display = "block";
+    //     button16.textContent = "↑";
+    //     } else {
+    //     content16.style.display = "none";
+    //     button16.textContent = "↓";
+    //     }
+
+    // }
+
+</script>
 </body>
 </html>

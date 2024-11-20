@@ -113,10 +113,9 @@ h1{
 }
 
  .folder img {
-    width: 90%; /* Fit image to the folder width */
+    width: 100%; /* Fit image to the folder width */
     height: 220px; /* Set height to ensure a consistent size */
     object-fit: cover; /* Crop image to fill */
-    padding-top: 10px;
     border-radius: 10px;
     
  }

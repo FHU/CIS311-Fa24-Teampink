@@ -115,8 +115,6 @@ main {
 .hog-callin-top img {
     width: 38%;
     background-color: var(--brown);
-    padding-right: 20px;
-    border-radius: 10px;
     margin-left: 30px;
 }
 
@@ -124,6 +122,16 @@ main {
     background-color: var(--beige);
     padding: 50px;
     margin: 30px 0 80px;
+}
+
+.hog-callin-form h1 {
+    font-size: 34px;
+    padding-bottom: 15px;
+}
+
+.hog-callin-form h2 {
+    padding: 10px 0;
+    font-size: 25px;
 }
 
 .hog-callin-form label {
@@ -158,7 +166,6 @@ main {
     cursor: pointer;
     margin-top: 15px;
 }
-
 
 /* Footer Section */
 

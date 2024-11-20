@@ -27,12 +27,4 @@ nextBtn.addEventListener('click', goToNextImage);
 setInterval(goToNextImage, 1000);
 
 
-// sponsor drop down
-const infoListItems = document.querySelectorAll('.info-list-item');
-
-infoListItems.forEach(item => {
-  item.querySelector('h3').addEventListener('click', () => {
-  item.classList.toggle('expanded');
-  });
-});
 
