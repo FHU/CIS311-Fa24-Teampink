@@ -265,19 +265,22 @@ body {
 }
 
 .recap-section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    /* padding: 40px 20px; */
-    align-items: center;
-    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
 }
 
 .recap-section .description{
-    font-size: 16px;
+    font-size: 18.5px;
+    text-align: left;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 20px;
+    width: 50%;
+}
+
+.time h3 {
+    text-decoration: underline;
 }
 
 /* .recap-section ul {
@@ -292,7 +295,6 @@ body {
 
 .recap-section .video iframe {
     border-radius: 10px;
-    justify-items: center;
 }
 
 /* Carousel Design */
@@ -522,6 +524,12 @@ footer img {
         display: flex;
         flex-direction: column;
         gap: 2rem;
+    }
+
+    .recap-section .video iframe {
+        border-radius: 10px;
+        justify-items: center;
+        width: auto;
     }
 
     /* footer Section */
