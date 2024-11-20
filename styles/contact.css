@@ -78,6 +78,14 @@ body {
     list-style: none;
 }
 
+.nav-one li:hover {
+    color: rgb(217, 201, 187);
+}
+
+.nav-two li:hover {
+    color: #c65e3b;
+}
+
 .nav-two {
     background-color: white;
     color: var(--orange);
@@ -374,6 +382,11 @@ footer img {
         width: 100%;
         font-size: 18px;
         text-align: left;
+    }
+
+    .dropdown-content {
+        left: 0;
+        width: 40%;
     }
 
     /* Contact Form Adjustments */
