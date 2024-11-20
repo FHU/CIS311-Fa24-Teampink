@@ -182,9 +182,6 @@ main {
 
 .contact-top img {
     width: 38%;
-    /* background-color: var(--brown); */
-    border-radius: 10px;
-    box-shadow: 40px 40px 0 var(--orange);
     margin-right: 40px;
     margin-bottom: 50px;
 }
@@ -357,18 +354,47 @@ footer img {
         transition: 0.3s;
     }
 
-    /* Main */
-    .contact-top {
-        display: flex;
-        flex-direction: column;
-        padding-top: 6rem;
-        width: 100%;
+    /* Main Section Adjustments */
+    main {
+        margin: 20px;
     }
 
-    .body {
-        display: flex;
+    .contact-top h1 {
+        font-size: 28px;
+        margin-top: 7rem;
+    }
+
+    .contact-top .body {
         flex-direction: column;
+        align-items: left;
+        margin-top: 1rem;
+    }
+
+    .contact-top img {
         width: 100%;
+        margin: 1rem;
+        margin-left: 0;
+    }
+
+    .text {
+        width: 100%;
+        font-size: 18px;
+        text-align: left;
+    }
+
+    /* Contact Form Adjustments */
+    .contact-form {
+        padding: 20px;
+        margin: 20px 0 40px;
+    }
+
+    .contact-form input,
+    .contact-form .info {
+        width: 70%;
+    }
+
+    .contact-form button {
+        width: 70%;
     }
 
     /* Footer */
