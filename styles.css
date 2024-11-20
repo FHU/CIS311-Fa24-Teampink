@@ -454,6 +454,11 @@ footer img {
         transition: 0.3s;
     }
 
+    .dropdown-content{
+        left: 0;
+        width: 40%;
+    }
+
     
     /* Main Section */
 
