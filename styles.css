@@ -393,8 +393,8 @@ footer img {
     }
 
     .logo-container img {
-        max-width: 85px;
-        padding-top: 12px;
+        max-width: 65px;
+        padding-top: 15px;
         margin-left: 25px;
         height: auto;
         display: block;
@@ -404,7 +404,7 @@ footer img {
         display: none; /* Hidden by default */
         flex-direction: column;
         position: absolute;
-        top: 70px; /* Adjust based on header height */
+        top: 55px; /* Adjust based on header height */
         left: 0;
         width: 100%;
         background-color: white;
@@ -470,12 +470,13 @@ footer img {
 
     .intro-section .first-image {
         overflow: hidden;
+        height: 300px;
     }
 
     .intro-section .first-image img {
         width: 100%;
         object-fit: cover;
-        height: 400px;
+        height: 300px;
         filter: blur(.8px);
     }
 
