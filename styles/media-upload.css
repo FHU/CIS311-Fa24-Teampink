@@ -315,9 +315,9 @@ footer img {
     }
 
     .logo-container img {
-        max-width: 65px;
-        padding-top: 15px;
-        margin-left: 25px;
+        max-width: 88px;
+        padding-top: 10px;
+        margin-left: 10px;
         height: auto;
         display: block;
     }
@@ -326,7 +326,7 @@ footer img {
         display: none; /* Hidden by default */
         flex-direction: column;
         position: absolute;
-        top: 85px; /* Adjust based on header height */
+        top: 95px; /* Adjust based on header height */
         left: 0;
         width: 100%;
         background-color: white;
@@ -338,18 +338,43 @@ footer img {
         display: flex; /* Display when toggled */
     }
 
-    .nav-one ul, .nav-two ul {
-        flex-direction: column;
-        text-align: right;
+    .nav-one {
+        display: none;
     }
 
-    .nav-one li, .nav-two li {
+    .nav-two {
+        display: none;
+    }
+
+    .nav-mobile {
+        color: var(--orange);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: larger;
+        padding: 10px 10px 8px 30px;
+        background-color: var(--tan);
+        position: sticky;
+    }
+
+    .nav-mobile li:hover {
+        color: #000;
+    }
+
+    .nav-mobile ul {
+        text-align: right;
+        text-decoration: none;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-mobile li {
         margin: 10px 0;
     }
 
-    .nav-container li a {
-        text-decoration: none;
-        color: inherit;
+    .nav-mobile a {
+        float: right;
     }
 
     .hamburger {
