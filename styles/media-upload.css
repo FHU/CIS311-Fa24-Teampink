@@ -258,7 +258,6 @@ body {
     cursor: pointer; 
     max-width: 200px; 
     margin-left: 40px
-    
 }
 
 .facebook-btn:hover {
@@ -266,11 +265,12 @@ body {
     transform: scale(1.05); 
 }
 
-.facebook-btn i {
-    margin-right: 8px;
-    font-size: 20px; 
-    color: white; 
+.icon {
+    fill: white;
 }
+
+
+/* Footer section */
 
 footer {
     color: white;
