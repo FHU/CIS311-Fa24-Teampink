@@ -21,11 +21,13 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Header Section */
+/* header section */
 .head {
-    display: flex;
-    flex-direction: column;
-    position: relative;
+    /* display: flex;
+    flex-direction: column; */
+    position: sticky;
+    top: 0;
+    z-index: 100; 
     width: 100%;
     font-weight: bold;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -59,12 +61,6 @@ body {
     display: block;
 }
 
-.nav-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
 .nav-one {
     background-color: var(--brown);
     color: white;
@@ -84,7 +80,7 @@ body {
 }
 
 .nav-two li:hover {
-    color: #c65e3b;
+    color: #d36d4a;
 }
 
 .nav-two {
@@ -312,18 +308,27 @@ footer img {
     }
 
     .nav-container {
+        background-color: white;
+        padding: 48px;
+    }
+
+    .nav-mobile {
         display: none; /* Hidden by default */
         flex-direction: column;
         position: absolute;
         top: 95px; /* Adjust based on header height */
         left: 0;
         width: 100%;
-        background-color: white;
+        justify-content: space-between;
+        font-size: larger;
+        padding: 10px 10px 8px 30px;
+        background-color: var(--tan);
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        z-index: 9;
+        z-index: 99;
+        position: sticky;
     }
 
-    .nav-container.show {
+    .nav-mobile.show {
         display: flex; /* Display when toggled */
     }
 
@@ -335,24 +340,12 @@ footer img {
         display: none;
     }
 
-    .nav-mobile {
-        color: var(--orange);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        font-size: larger;
-        padding: 10px 10px 8px 30px;
-        background-color: var(--tan);
-        position: sticky;
-    }
-
-    .nav-mobile li:hover {
+    .nav-mobile a:hover {
         color: #000;
     }
 
     .nav-mobile ul {
         text-align: right;
-        text-decoration: none;
         list-style: none;
         display: flex;
         flex-direction: column;
@@ -364,10 +357,12 @@ footer img {
 
     .nav-mobile a {
         float: right;
+        text-decoration: none;
+        color: var(--orange);
     }
 
     .hamburger {
-        display: flex; /* Hidden on desktop */
+        display: flex;
         flex-direction: column;
         justify-content: space-between;
         width: 30px;
@@ -376,7 +371,7 @@ footer img {
         border: none;
         cursor: pointer;
         position: absolute;
-        top: 30px;
+        top: 36px;
         right: 20px;
         z-index: 10;
     }
@@ -385,12 +380,12 @@ footer img {
         display: block;
         height: 3px;
         width: 100%;
-        background-color: black;
+        background-color: var(--orange);
         border-radius: 2px;
         transition: 0.3s;
     }
 
-    .dropdown-content {
+    .dropdown-content{
         left: 0;
         width: 40%;
     }

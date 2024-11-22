@@ -22,10 +22,10 @@ function toggleAccordion(element) {
 
 document.addEventListener("DOMContentLoaded", () => {
     const hamburger = document.querySelector(".hamburger");
-    const navContainer = document.querySelector(".nav-container");
+    const navMobile = document.querySelector(".nav-mobile");
   
     hamburger.addEventListener("click", () => {
-        navContainer.classList.toggle("show");
+        navMobile.classList.toggle("show");
         hamburger.classList.toggle("active");
     });
 });
