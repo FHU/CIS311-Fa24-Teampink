@@ -198,21 +198,21 @@ h1{
     overflow: hidden; /* Ensures image doesn't overflow outside the folder */
 }
 
- .folder img {
+.folder img {
     width: 100%; /* Fit image to the folder width */
     height: 220px; /* Set height to ensure a consistent size */
     object-fit: cover; /* Crop image to fill */
     border-radius: 10px;
     
- }
+}
 
- .year {
+.year {
     margin-top: 10px;
     font-size: 18px;
     font-weight: bold;
     color: #ffffff;
     text-align: center;
- }
+}
 
 .submit-button {
     background-color: #BC4F32; 

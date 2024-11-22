@@ -271,7 +271,10 @@ form select {
     cursor: pointer;
     margin-top: 15px;
     margin-bottom: 8px;
-    background-color: none;
+    background-color: var(--orange);
+    color: white;
+    font-size: 18px; 
+    font-weight: bold;
 }
 
 .buttons .file {
