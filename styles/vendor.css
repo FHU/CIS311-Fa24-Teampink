@@ -165,6 +165,10 @@ body {
     display: none;
 }
 
+.nav-mobile {
+    display: none;
+}
+
 /* Main Section */
 main {
     margin: 50px;
@@ -226,7 +230,7 @@ main {
 
 .vendor-form input,
 .vendor-form select {
-    width: 70%;
+    width: 100%;
     padding: 8px;
     margin:5px 0 10px;
     box-sizing: border-box;
@@ -443,7 +447,7 @@ footer img {
     }
 
     .vendor-form .info {
-        width: 60%;
+        width: 100%;
     }
 
     .vendor-form input,
@@ -453,6 +457,9 @@ footer img {
 
     .vendor-form button {
         width: 100%;
+        font-size: 18px;
+        font-weight: bold; 
+        text-align: center; 
     }
 
     .amount {

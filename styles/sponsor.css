@@ -167,6 +167,10 @@ body {
     display: none;
 }
 
+.nav-mobile {
+    display: none;
+}
+
 /* Main Section */
 
 main {
