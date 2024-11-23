@@ -200,7 +200,7 @@ main {
 .sponsor-top img {
     width: 38%;
     /* background-color: var(--brown); */
-    /* margin-right: 30px; */
+    box-shadow: 5px 5px 10px var(--brown);
     margin-bottom: 50px;
 }
 
@@ -329,9 +329,11 @@ form select {
 .festival-content {
   border-bottom: 1px solid #ccc;
 }
+
 .festival-content:last-child {
   border-bottom: none;
 }
+
 .name-content {
   display: flex;
   justify-content: space-between;
@@ -340,9 +342,11 @@ form select {
   cursor: pointer;
   transition: background-color 0.3s;
 }
+
 .name-content:hover {
   background-color: #d9cac3;
 }
+
 .read-more-content {
   max-height: 0;
   overflow: hidden;
@@ -351,6 +355,7 @@ form select {
   background-color: #d9cac3;
 
 }
+
 .read-more-content li {
   margin: 1rem 0;
   color: black;
@@ -358,6 +363,7 @@ form select {
   font-size: 18px;
   font-weight: normal;
 }
+
 .name-content.active + .read-more-content {
   max-height: 200px; /* Adjust as needed */
 }
@@ -510,7 +516,6 @@ footer img {
     /* Main Section Adjustments */
     main {
         margin: 20px;
-        padding-top: 4rem;
     }
 
     .sponsor-top .info {
@@ -545,7 +550,7 @@ footer img {
     }
 
     .sponsor-info p {
-        width: 60%;
+        width: 100%;
         font-size: 16px;
     }
 
@@ -554,7 +559,7 @@ footer img {
     }
 
     form input, form select {
-        width: 60%;
+        width: 100%;
     }
 
     .sponsor-form button {

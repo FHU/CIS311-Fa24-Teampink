@@ -468,8 +468,6 @@ footer img {
 
     .vendor-form button {
         width: 100%;
-        font-size: 18px;
-        font-weight: bold; 
         text-align: center; 
     }
 
@@ -490,6 +488,10 @@ footer img {
     .check input {
         width: 15px;
         height: 20px;
+    }
+
+    .vendor-form button {
+        width: 60%;
     }
 
     /* footer Section */
