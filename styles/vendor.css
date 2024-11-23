@@ -215,26 +215,35 @@ main {
 }
 
 .vendor-form h2 {
-    padding: 10px 0;
+    padding: 14px 0;
     font-size: 25px;
+    margin: 10px 0;
+    text-decoration: underline;
 }
 
 .vendor-form label {
     display: block;
-    margin-top: 15px;
     font-weight: bold;
+    margin-bottom: 5px; /* Space between label and input */
 }
 
 .vendor-form input,
 .vendor-form select {
     width: 100%;
     padding: 8px;
-    margin:5px 0 10px;
     box-sizing: border-box;
 }
 
+.vendor-form .info .question {
+    display: flex;
+    flex-direction: column;
+}
+
 .vendor-form .info {
-    width: 60%;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; /* Spacing between items */
 }
 
 .vendor-form button {
@@ -250,7 +259,6 @@ main {
 }
 
 .amount {
-    width: 72%;
     text-wrap: wrap;
     color: var(--orange);
 }
@@ -267,6 +275,9 @@ main {
     padding-top: 12px;
 }
 
+.check {
+    padding-top: 8px;
+}
 .check input {
     width: 6%;
 }
@@ -446,6 +457,8 @@ footer img {
 
     .vendor-form .info {
         width: 100%;
+        display: flex;
+        flex-direction: column;
     }
 
     .vendor-form input,
@@ -475,7 +488,7 @@ footer img {
     }
 
     .check input {
-        width: 20px;
+        width: 15px;
         height: 20px;
     }
 
