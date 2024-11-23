@@ -373,10 +373,6 @@ footer img {
 
     /* Main */
 
-    main {
-        padding-top: 4rem;
-    }
-
     .image-gallery {
         grid-template-columns: 1fr; /* Single column layout */
         padding: 0 10px;

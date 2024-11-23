@@ -408,10 +408,6 @@ footer img {
 
     /* Main */
 
-    .main .content {
-        margin-top: 4rem;
-    }
-
     .content {
         display: flex;
         flex-direction: column;
