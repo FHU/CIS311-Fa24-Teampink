@@ -357,6 +357,25 @@ body {
 
 /* end of carousel Design */
 
+.lower-sponsor {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+}
+
+.lower-sponsor h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 16px;
+    font-size: 20px;
+}
+
 /* footer Section */
 
 footer {
@@ -567,6 +586,11 @@ footer img {
 
     .recap-section .video iframe {
         width: fit-content;
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: center;
     }
 
     /* footer Section */

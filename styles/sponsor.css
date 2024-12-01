@@ -315,8 +315,7 @@ form select {
 .accordion {
   overflow: hidden;
   margin-bottom: 1rem; 
-  background-color: #d7c3ba;
- 
+  background-color: #d7c3ba; 
 }
 
 .accordion2 {
@@ -353,7 +352,6 @@ form select {
   transition: max-height 0.3s ease;
   padding: 0 1rem;
   background-color: #d9cac3;
-
 }
 
 .read-more-content li {
