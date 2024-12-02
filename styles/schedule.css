@@ -256,7 +256,7 @@ main h1 {
     border-radius: 5px;
     display: inline-block;
     margin: 8px 0;
-    text-wrap: wrap;
+    /* text-wrap: wrap; */
     width: 15%;
     text-align: center;
 }
@@ -492,29 +492,8 @@ footer img {
         padding: 14px 0;
     }
     
-    .time-tag-event {
-        background-color: var(--orange);
-        color: white;
-        padding: 5px 10px;
-        font-weight: bold;
-        border-radius: 5px;
-        display: inline-block;
-        margin: 8px 0;
-        text-wrap: wrap;
-        width: 15%;
-        text-align: center;
-    }
-    
-    .time-tag-entertainment{
-        background-color: var(--hog-green);
-        color: white;
-        padding: 5px 10px;
-        font-weight: bold;
-        border-radius: 5px;
-        display: inline-block;
-        margin: 8px 0; 
-        width: 15%;
-        text-align: center;
+    .time-tag-event, .time-tag-entertainment {        
+        width: 80px;
     }
     
     .day-of-week {
@@ -525,8 +504,9 @@ footer img {
         font-size: 16px;
     }
     
-    .event .info {
-        text-wrap: wrap;
+    .event-details .info {
+        white-space: wrap; /* Prevents wrapping */
+        overflow: hidden;
     }
 
     /*fixed*/
