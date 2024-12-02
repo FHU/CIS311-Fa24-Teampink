@@ -347,12 +347,21 @@ body {
 
 .logos-slide {
     display: inline-block;
-    animation: 100s slide infinite linear;
+    animation: 70s slide infinite linear;
 }
 
 .logos-slide img {
-    height: 80px;
-    padding: 0 40px;
+    height: 250px;
+    width: 250px;
+    object-fit: contain;
+    padding: 0 25px;
+}
+
+.signsgraph {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+    padding: 20px;
 }
 
 /* end of carousel Design */
