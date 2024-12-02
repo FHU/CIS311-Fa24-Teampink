@@ -54,7 +54,7 @@ body {
 }
 
 .logo-container img {
-    max-width: 150px;
+    max-width: 145px;
     padding-top: 6px;
     margin-left: 25px;
     height: auto;
@@ -303,7 +303,7 @@ footer img {
     }
 
     .logo-container img {
-        max-width: 88px;
+        max-width: 96px;
         padding-top: 10px;
         margin-left: 10px;
         height: auto;
