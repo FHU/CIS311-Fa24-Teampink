@@ -167,28 +167,27 @@ body {
 }
 
 /* Main Section */
-
 main {
     margin: 50px;
 }
 
-.sponsor-top {
+.vendor-top {
     padding: 10px 0;
-    margin-bottom: 30px 0 40px;
+    margin-bottom: 30px 0 20px;
 }
 
-.sponsor-top .info {
+.vendor-top .info {
     display: flex;
     justify-content: space-between;
 }
 
-.sponsor-top .info p {
+.vendor-top .info p {
     font-size: 24px;
     width: 50%;
     line-height: 1.5;
 }
 
-.sponsor-top h1 {
+.vendor-top h1 {
     font-size: 50px;
     padding: 20px 0;
     text-wrap: wrap;
@@ -197,175 +196,91 @@ main {
     color: var(--orange);
 }
 
-.sponsor-top img {
+.vendor-top img {
     width: 38%;
     /* background-color: var(--brown); */
     box-shadow: 5px 5px 10px var(--brown);
     margin-bottom: 50px;
 }
 
-.sponsor-main {
-    display: flex;
+.vendor-form {
     background-color: var(--beige);
     padding: 50px;
     margin: 30px 0 80px;
 }
 
-.sponsor-logo input {
-    color: black;
+.vendor-form h1 {
+    font-size: 34px;
+    padding-bottom: 15px;
 }
 
-.sponsor-form {
-    width: 50%;
-    padding: 1rem;
+.vendor-form h2 {
+    padding: 14px 0;
+    font-size: 25px;
+    margin: 10px 0;
+    text-decoration: underline;
 }
 
-.sponsor-form p {
-    color: var(--orange);
+.vendor-form label {
+    display: block;
     font-weight: bold;
+    margin-bottom: 5px; /* Space between label and input */
 }
 
-form {
+.vendor-form input,
+.vendor-form select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.vendor-form .info .question {
     display: flex;
     flex-direction: column;
 }
 
-form h2, h3, p {
-    padding-bottom: 1rem;
-    padding-top: 2rem;
+.vendor-form .info {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; /* Spacing between items */
 }
 
-form label {
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-    font-weight: bold;
-
-}
-
-form input {
-    width: 70%;
-    padding: 8px;
-    margin:5px 0 10px;
-    box-sizing: border-box;
-}
-
-form select {
-    width: 70%;
-    height: 2.5rem;
-    padding: 8px;
-    font-size: 16px;
-    border: none;
-    background-color: white;
-    color: #333;
-    cursor: pointer;
-}
-
-.checkbox input {
-    width: 6%;
-}
-
-.sponsor-form button {
+.vendor-form button {
     width: 40%;
     padding: 10px;
+    background-color: var(--orange);
+    color: #fff;
     border: none;
     cursor: pointer;
     margin-top: 15px;
-    margin-bottom: 8px;
-    background-color: var(--orange);
-    color: white;
     font-size: 18px; 
     font-weight: bold;
 }
 
-.buttons .file {
-    background-color: var(--orange);
-    color: #fff;
+.amount {
+    text-wrap: wrap;
+    color: var(--orange);
 }
 
-.buttons button {
-    width: 20%;
+.insurance {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
 }
 
-.sponsor-info {
-    padding: 1rem;
-    font-size: 20px;
-    color: black;
-    font-weight: bold;
-    width: 50%;
-
+.insurance p {
+    padding-top: 12px;
 }
 
-.sponsor-info p {
-    width: 50%;
+.check {
+    padding-top: 8px;
 }
-
-.sponsor-info h1 {
-    font-size: 28px;
-    padding-bottom: 1rem;
-    color: black;
+.check input {
+    width: 6%;
 }
-
-.container {
-    max-width: 600px;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-}
-
-  /* Read more section styling */
-.accordion {
-  overflow: hidden;
-  margin-bottom: 1rem; 
-  background-color: #d7c3ba; 
-}
-
-.accordion2 {
-    overflow: hidden;
-    margin-bottom: 1rem; 
-    background-color: #d7c3ba;
-
-}
-  
-.festival-content {
-  border-bottom: 1px solid #ccc;
-}
-
-.festival-content:last-child {
-  border-bottom: none;
-}
-
-.name-content {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
-  background-color: transparent;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.name-content:hover {
-  background-color: #d9cac3;
-}
-
-.read-more-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-  padding: 0 1rem;
-  background-color: #d9cac3;
-}
-
-.read-more-content li {
-  margin: 1rem 0;
-  color: black;
-  width: 100%;
-  font-size: 18px;
-  font-weight: normal;
-}
-
-.name-content.active + .read-more-content {
-  max-height: 200px; /* Adjust as needed */
-}
-
 
 /* footer Section */
 
@@ -374,10 +289,6 @@ footer {
     background-color: var(--brown);
     padding-top: 10px;
     width: 100%;
-}
-
-footer h3, p {
-    padding: 0;
 }
 
 footer img {
@@ -511,75 +422,74 @@ footer img {
         width: 40%;
     }
     
-    /* Main Section Adjustments */
+    /* Main Content Adjustments */
     main {
         margin: 20px;
     }
 
-    .sponsor-top .info {
-        flex-direction: column;
-    }
+    /* Vendor Top Section */
 
-    .sponsor-top .info p {
-        width: 100%;
-        font-size: 18px;
-    }
-
-    .sponsor-top h1 {
+    .vendor-top h1 {
         width: 100%;
         font-size: 32px;
     }
 
-    .sponsor-top img {
-        width: 100%;
-        margin-right: 0;
-        margin-bottom: 30px;
+    .vendor-top .info {
+        flex-direction: column;
     }
 
-    .sponsor-main {
-        flex-direction: column;
+    .vendor-top .info p {
+        width: 100%;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .vendor-top img {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    /* Vendor Form Adjustments */
+    .vendor-form {
         padding: 20px;
         margin: 20px 0 40px;
     }
 
-    .sponsor-form, .sponsor-info {
+    .vendor-form .info {
         width: 100%;
-        padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
     }
 
-    .sponsor-info p {
-        width: 100%;
-        font-size: 16px;
-    }
-
-    .sponsor-info h1 {
-        font-size: 24px;
-    }
-
-    form input, form select {
+    .vendor-form input,
+    .vendor-form select {
         width: 100%;
     }
 
-    .sponsor-form button {
-        width: 60%;
+    .vendor-form button {
+        width: 100%;
+        font-size: 18px;
+        font-weight: bold; 
+        text-align: center; 
     }
 
-    .buttons button {
-        width: 60%;
-        margin-bottom: 10px;
+    .amount {
+        width: 100%;
     }
 
-    /* Accordion Adjustments */
-    .accordion, .accordion2 {
-        margin-bottom: 0.5rem;
+    .insurance {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    .name-content {
-        padding: 0.75rem;
+    .insurance p {
+        padding: 12px 0;
     }
 
-    .read-more-content li {
-        font-size: 16px;
+    .check input {
+        width: 15px;
+        height: 20px;
     }
 
     /* footer Section */

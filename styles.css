@@ -24,9 +24,11 @@ body {
 
 /* header section */
 .head {
-    display: flex;
-    flex-direction: column;
-    position: relative;
+    /* display: flex;
+    flex-direction: column; */
+    position: sticky;
+    top: 0;
+    z-index: 100; 
     width: 100%;
     font-weight: bold;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -60,12 +62,6 @@ body {
     display: block;
 }
 
-.nav-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
 .nav-one {
     background-color: var(--brown);
     color: white;
@@ -85,7 +81,7 @@ body {
 }
 
 .nav-two li:hover {
-    color: #c65e3b;
+    color: #d36d4a;
 }
 
 .nav-two {
@@ -167,6 +163,10 @@ body {
     display: none;
 }
 
+.nav-mobile {
+    display: none;
+}
+
 /* Main Section */
 .intro-section .first-image {
     overflow: hidden; /* Ensures the overlay stays within the image bounds */
@@ -211,7 +211,7 @@ body {
     inset: 50% 0 auto;
     aspect-ratio: 1;
     background: color-mix(in srgb, var(--c), #000 35%);
-    clip-path: polygon(calc(100%/3) 0,calc(200%/3) 0,100% 90%,calc(200%/3) 100%,calc(100%/3) 0,calc(200%/3) 0,calc(100%/3) 100%,0 90%);
+    clip-path: polygon(calc(100%/3) 0,calc(200%/3) 0,100% 90%,80% 85%,calc(200%/3) 100%,calc(100%/3) 0,calc(200%/3) 0,calc(100%/3) 100%,20% 85%,0 90%);
 }
 
 .ribbon:after {
@@ -220,7 +220,7 @@ body {
     z-index: -1;
     inset: 0;
     background: radial-gradient(35% 35%,#0000 96%,#0003 97% 99%,#0000) var(--c);
-    clip-path: polygon(100.00% 50.00%,89.23% 57.80%,96.19% 69.13%,83.26% 72.22%,85.36% 85.36%,72.22% 83.26%,69.13% 96.19%,57.80% 89.23%,50.00% 100.00%,42.20% 89.23%,30.87% 96.19%,27.78% 83.26%,14.64% 85.36%,16.74% 72.22%,3.81% 69.13%,10.77% 57.80%,0.00% 50.00%,10.77% 42.20%,3.81% 30.87%,16.74% 27.78%,14.64% 14.64%,27.78% 16.74%,30.87% 3.81%,42.20% 10.77%,50.00% 0.00%,57.80% 10.77%,69.13% 3.81%,72.22% 16.74%,85.36% 14.64%,83.26% 27.78%,96.19% 30.87%,89.23% 42.20%); /* from https://css-generators.com/starburst-shape/ */
+    clip-path: polygon(100.00% 50.00%,89.66% 55.22%,98.30% 62.94%,86.96% 65.31%,93.30% 75.00%,81.73% 74.35%,85.36% 85.36%,74.35% 81.73%,75.00% 93.30%,65.31% 86.96%,62.94% 98.30%,55.22% 89.66%,50.00% 100.00%,44.78% 89.66%,37.06% 98.30%,34.69% 86.96%,25.00% 93.30%,25.65% 81.73%,14.64% 85.36%,18.27% 74.35%,6.70% 75.00%,13.04% 65.31%,1.70% 62.94%,10.34% 55.22%,0.00% 50.00%,10.34% 44.78%,1.70% 37.06%,13.04% 34.69%,6.70% 25.00%,18.27% 25.65%,14.64% 14.64%,25.65% 18.27%,25.00% 6.70%,34.69% 13.04%,37.06% 1.70%,44.78% 10.34%,50.00% 0.00%,55.22% 10.34%,62.94% 1.70%,65.31% 13.04%,75.00% 6.70%,74.35% 18.27%,85.36% 14.64%,81.73% 25.65%,93.30% 25.00%,86.96% 34.69%,98.30% 37.06%,89.66% 44.78%); /* from https://css-generators.com/starburst-shape/ */
 }
 
 .intro-section h1 {
@@ -268,6 +268,7 @@ body {
     display: flex;
     justify-content: space-around;
     margin: 30px;
+    align-items: center;
 }
 
 .recap-section .description{
@@ -277,6 +278,11 @@ body {
     flex-direction: column;
     gap: 20px;
     width: 50%;
+}
+
+.recap-section .description p {
+    font-size: 24px;
+    line-height: 1.5;
 }
 
 .time h3 {
@@ -351,6 +357,25 @@ body {
 
 /* end of carousel Design */
 
+.lower-sponsor {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+}
+
+.lower-sponsor h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 16px;
+    font-size: 20px;
+}
+
 /* footer Section */
 
 footer {
@@ -375,7 +400,6 @@ footer img {
 .footer-info {
     font-size: 12px;
     line-height: 1.5rem;
-
     display: flex;
     flex-direction: column;
     width: 15rem;
@@ -401,12 +425,6 @@ footer img {
     }
     
     /* Header Section */
-    .head {
-        background-color: white;
-        flex-direction: row;
-        align-items: center;
-        display: flex;
-    }
 
     .logo-container {
         width: auto;
@@ -414,45 +432,69 @@ footer img {
     }
 
     .logo-container img {
-        max-width: 65px;
-        padding-top: 15px;
-        margin-left: 25px;
+        max-width: 88px;
+        padding-top: 10px;
+        margin-left: 10px;
         height: auto;
         display: block;
     }
 
     .nav-container {
+        background-color: white;
+        padding: 48px;
+    }
+
+    .nav-mobile {
         display: none; /* Hidden by default */
         flex-direction: column;
         position: absolute;
-        top: 85px; /* Adjust based on header height */
+        top: 95px; /* Adjust based on header height */
         left: 0;
         width: 100%;
-        background-color: white;
+        justify-content: space-between;
+        font-size: larger;
+        padding: 10px 10px 8px 30px;
+        background-color: var(--tan);
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        z-index: 9;
+        z-index: 99;
+        position: sticky;
     }
 
-    .nav-container.show {
+    .nav-mobile.show {
         display: flex; /* Display when toggled */
     }
 
-    .nav-one ul, .nav-two ul {
-        flex-direction: column;
-        text-align: right;
+    .nav-one {
+        display: none;
     }
 
-    .nav-one li, .nav-two li {
+    .nav-two {
+        display: none;
+    }
+
+    .nav-mobile a:hover {
+        color: #000;
+    }
+
+    .nav-mobile ul {
+        text-align: right;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-mobile li {
         margin: 10px 0;
     }
 
-    .nav-container li a {
+    .nav-mobile a {
+        float: right;
         text-decoration: none;
-        color: inherit;
+        color: var(--orange);
     }
 
     .hamburger {
-        display: flex; /* Hidden on desktop */
+        display: flex;
         flex-direction: column;
         justify-content: space-between;
         width: 30px;
@@ -461,7 +503,7 @@ footer img {
         border: none;
         cursor: pointer;
         position: absolute;
-        top: 30px;
+        top: 36px;
         right: 20px;
         z-index: 10;
     }
@@ -470,7 +512,7 @@ footer img {
         display: block;
         height: 3px;
         width: 100%;
-        background-color: black;
+        background-color: var(--orange);
         border-radius: 2px;
         transition: 0.3s;
     }
@@ -486,7 +528,6 @@ footer img {
     .intro-section {
         display: flex;
         flex-direction: column;
-        padding-top: 6rem;
     }
 
     .intro-section .first-image {
@@ -538,8 +579,18 @@ footer img {
         width: 100%;
     }
 
+    .recap-section .description p {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
     .recap-section .video iframe {
         width: fit-content;
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: center;
     }
 
     /* footer Section */
