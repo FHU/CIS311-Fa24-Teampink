@@ -168,12 +168,48 @@ body {
 
 /* Main Section */
 
+.top-area {
+    display: flex;
+    margin: 20px;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.circle-green {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--hog-green);
+    display: inline-block; /* Ensures it doesn't take up more space than necessary */
+    margin-right: 8px; /* Adds spacing between the circle and the text */
+}
+
+.circle-orange {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--orange);
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.top-label div{
+    display: flex;
+    align-items: center;
+}
+
+.top-label p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
 main h1 {
     color: var(--orange);
     font-size: 50px;
-    margin: 20px;
-    padding: 10px;
 }
+
 
 .event-schedule {
     width: 90%;
