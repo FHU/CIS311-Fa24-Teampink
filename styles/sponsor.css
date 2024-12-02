@@ -311,7 +311,8 @@ form select {
     font-family: Arial, sans-serif;
 }
 
-  /* Read more section styling */
+  /* Accordian section styling */
+
 .accordion {
   overflow: hidden;
   margin-bottom: 1rem; 
@@ -323,6 +324,10 @@ form select {
     margin-bottom: 1rem; 
     background-color: #d7c3ba;
 
+}
+
+.toggle-icon {
+    font-weight: bold;
 }
   
 .festival-content {
@@ -346,20 +351,32 @@ form select {
   background-color: #d9cac3;
 }
 
+.name-content .toggle-icon {
+    margin-right: 10px; /* Add space between the icon and the text */
+    transition: transform 0.2s ease; /* Optional animation */
+}
+
+.name-content:active .toggle-icon {
+    transform: rotate(90deg);
+}
+
 .read-more-content {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease;
   padding: 0 1rem;
   background-color: #d9cac3;
+  padding-left: 0;
 }
-
+  
 .read-more-content li {
-  margin: 1rem 0;
-  color: black;
-  width: 100%;
-  font-size: 18px;
-  font-weight: normal;
+    margin: 1rem 0;
+    color: black;
+    font-size: 18px;
+    font-weight: normal;
+    list-style-position: inside;
+    text-indent: -1.3em;
+    padding-left: 1.5em;
 }
 
 .name-content.active + .read-more-content {
