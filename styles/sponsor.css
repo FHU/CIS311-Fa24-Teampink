@@ -311,7 +311,8 @@ form select {
     font-family: Arial, sans-serif;
 }
 
-  /* Read more section styling */
+  /* Accordian section styling */
+
 .accordion {
   overflow: hidden;
   margin-bottom: 1rem; 
@@ -348,6 +349,15 @@ form select {
 
 .name-content:hover {
   background-color: #d9cac3;
+}
+
+.name-content .toggle-icon {
+    margin-right: 10px; /* Add space between the icon and the text */
+    transition: transform 0.2s ease; /* Optional animation */
+}
+
+.name-content:active .toggle-icon {
+    transform: rotate(90deg);
 }
 
 .read-more-content {
