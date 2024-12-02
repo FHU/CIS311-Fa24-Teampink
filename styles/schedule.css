@@ -210,18 +210,14 @@ main h1 {
     font-size: 50px;
 }
 
-
-.event-schedule {
-    width: 90%;
-    max-width: 800px;
-    margin: 20px 20px;
-    padding: 20px;
-}
-
 .event {
     display: flex;
     align-items: flex-start;
     margin: 20px 0;
+}
+
+.mobile-day-of-week {
+    display: none;
 }
 
 .date {
@@ -277,7 +273,11 @@ main h1 {
     text-align: center;
 }
 
-.event h2 {
+.day-of-week {
+    font-size: 30px;
+}
+
+.event .event-details .info h2 {
     font-size: 20px;
     margin: 5px 0;
 }
@@ -438,6 +438,106 @@ footer img {
 
     main h1 {
         font-size: 28px;
+    }
+    
+    .circle-green {
+        width: 14px;
+        height: 14px;
+    }
+    
+    .circle-orange {
+        width: 14px;
+        height: 14px;
+    }
+    
+    .top-label p {
+        font-size: 15px;
+    }
+
+    .event {
+        flex-direction: column;
+        margin: 20px 0;
+        width: fit-content;
+    }
+    
+    .mobile-day-of-week {
+        display: none;
+    }
+    
+    /*fixed*/
+    .date {
+        text-align: center;
+        gap: 10px;
+        align-items: center;
+        flex-direction: row;
+        width: fit-content;
+    }
+    
+    /*fixed*/
+    .date .day {
+        font-size: 30px;
+    }
+    
+    /*fixed*/
+    .date .month {
+        font-size: 30px;
+    }
+    
+    .event-details {
+        /* flex-grow: 1; */
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        margin: 20px 30px;
+        padding: 14px 0;
+    }
+    
+    .time-tag-event {
+        background-color: var(--orange);
+        color: white;
+        padding: 5px 10px;
+        font-weight: bold;
+        border-radius: 5px;
+        display: inline-block;
+        margin: 8px 0;
+        text-wrap: wrap;
+        width: 15%;
+        text-align: center;
+    }
+    
+    .time-tag-entertainment{
+        background-color: var(--hog-green);
+        color: white;
+        padding: 5px 10px;
+        font-weight: bold;
+        border-radius: 5px;
+        display: inline-block;
+        margin: 8px 0; 
+        width: 15%;
+        text-align: center;
+    }
+    
+    .day-of-week {
+        font-size: 30px;
+    }
+    
+    .event h3 {
+        font-size: 16px;
+    }
+    
+    .event .info {
+        text-wrap: wrap;
+    }
+
+    /*fixed*/
+    .mobile-day-of-week {
+        display: contents;
+        font-size: 26px;
+        color: black;
+    }
+
+    .day-of-week {
+        display: none;
     }
     
     /* Footer */
