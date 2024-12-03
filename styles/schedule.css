@@ -168,24 +168,56 @@ body {
 
 /* Main Section */
 
+.top-area {
+    display: flex;
+    margin: 20px;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.circle-green {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--hog-green);
+    display: inline-block; /* Ensures it doesn't take up more space than necessary */
+    margin-right: 8px; /* Adds spacing between the circle and the text */
+}
+
+.circle-orange {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--orange);
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.top-label div{
+    display: flex;
+    align-items: center;
+}
+
+.top-label p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
 main h1 {
     color: var(--orange);
     font-size: 50px;
-    margin: 20px;
-    padding: 10px;
-}
-
-.event-schedule {
-    width: 90%;
-    max-width: 800px;
-    margin: 20px 20px;
-    padding: 20px;
 }
 
 .event {
     display: flex;
     align-items: flex-start;
     margin: 20px 0;
+}
+
+.mobile-day-of-week {
+    display: none;
 }
 
 .date {
@@ -195,6 +227,7 @@ main h1 {
     font-weight: bold;
     display: flex;
     flex-direction: column;
+    width: 10%;
 }
 
 .date .day {
@@ -209,7 +242,7 @@ main h1 {
 .event-details {
     /* flex-grow: 1; */
     display: flex;
-    gap: 10px;
+    gap: 2.5rem;
     align-items: center;
     /* margin: 12px 0; */
     padding: 14px 0;
@@ -223,7 +256,9 @@ main h1 {
     border-radius: 5px;
     display: inline-block;
     margin: 8px 0;
-    text-wrap: wrap;
+    /* text-wrap: wrap; */
+    width: 15%;
+    text-align: center;
 }
 
 .time-tag-entertainment{
@@ -234,9 +269,15 @@ main h1 {
     border-radius: 5px;
     display: inline-block;
     margin: 8px 0; 
+    width: 15%;
+    text-align: center;
 }
 
-.event h2 {
+.day-of-week {
+    font-size: 30px;
+}
+
+.event .event-details .info h2 {
     font-size: 20px;
     margin: 5px 0;
 }
@@ -397,6 +438,86 @@ footer img {
 
     main h1 {
         font-size: 28px;
+    }
+    
+    .circle-green {
+        width: 14px;
+        height: 14px;
+    }
+    
+    .circle-orange {
+        width: 14px;
+        height: 14px;
+    }
+    
+    .top-label p {
+        font-size: 15px;
+    }
+
+    .event {
+        flex-direction: column;
+        margin: 20px 0;
+        width: fit-content;
+    }
+    
+    .mobile-day-of-week {
+        display: none;
+    }
+    
+    /*fixed*/
+    .date {
+        text-align: center;
+        gap: 10px;
+        align-items: center;
+        flex-direction: row;
+        width: fit-content;
+    }
+    
+    /*fixed*/
+    .date .day {
+        font-size: 30px;
+    }
+    
+    /*fixed*/
+    .date .month {
+        font-size: 30px;
+    }
+    
+    .event-details {
+        /* flex-grow: 1; */
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        margin: 20px 30px;
+        padding: 14px 0;
+    }
+    
+    .time-tag-event, .time-tag-entertainment {        
+        width: 80px;
+    }
+    
+    .day-of-week {
+        font-size: 30px;
+    }
+    
+    .event h3 {
+        font-size: 16px;
+    }
+    
+    .event-details .info {
+        white-space: wrap; /* Prevents wrapping */
+        overflow: hidden;
+    }
+
+    /*fixed*/
+    .mobile-day-of-week {
+        display: contents;
+        font-size: 26px;
+        color: black;
+    }
+
+    .day-of-week {
+        display: none;
     }
     
     /* Footer */
